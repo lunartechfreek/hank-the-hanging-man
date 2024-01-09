@@ -17,6 +17,37 @@ def run_story(story):
     """
     print(story)
 
+def select_difficulty():
+    """
+    Function for user to choose a difficulty,
+    which will return the array of words 
+    for the difficulty chosen
+    """
+    while True:
+        # Loop to ask user to choose a difficulty
+        print('Type E for easy')
+        print('Type M for medium')
+        print('Type H for hard\n')
+        user_input = input('Please type E, M or H ').upper()  
+
+        if user_input == 'E':
+            run_story(story.easy)
+            difficulty = words.easy_words
+            break
+        elif user_input == 'M':
+            run_story(story.medium)
+            difficulty = words.medium_words
+            break
+        elif user_input == 'H':
+            run_story(story.hard)
+            difficulty = words.hard_words
+            break
+        else:
+            # Handles invalid input by the user
+            print('Invalid input. Please enter .\n')
+
+    return difficulty
+
 def welcome():
     """
     Function to handle the start of the game
