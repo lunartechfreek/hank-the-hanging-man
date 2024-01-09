@@ -56,18 +56,25 @@ def welcome():
 
     while True:
         # Loop to ask user if they would like to play
-        user_input = input('Do you accept the challange? (Y/N)').upper()  
+        user_input = input('Do you accept the challange? (Y/N) ').upper()  
 
         if user_input == 'N':
-            print('Goodbye!')
-            break
+            print('\nGoodbye!')
+            quit()
         elif user_input == 'Y':
-            print('Lets Play!...\n')
+            print("\nLet's save Hank!...")
+            print("First let's choose the difficulty...\n")
+            difficulty = select_difficulty()
+            break
         else:
             # Handles invalid input by the user
             print('Invalid input. Please enter Y or N.\n')
 
+    return difficulty
+
 def main():
-    welcome()
+    selected_difficulty = welcome()
+    word = get_word(selected_difficulty)
+    
 
 main()
