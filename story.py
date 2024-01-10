@@ -40,9 +40,10 @@ His life depends on it!
 
 # Narrative for hard difficulty
 hard = """
-Well look at this, you have chosen hard 🤓
+Well look at this, you have chosen hard 🤓\n
 Hank is filled with the upmost confidence in you!
 But has to consider that you have just made the game that 
 decides his fate even harder for yourself!
-Let’s hope this bravery pays off…Hanks life depends on it!
+Let’s hope this bravery pays off…
+Hanks life depends on it!
 """
