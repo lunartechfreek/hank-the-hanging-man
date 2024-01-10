@@ -1,6 +1,7 @@
 import random
 import words 
 import story
+import textwrap
 
 def get_word(difficulty_selected):
     """
@@ -72,9 +73,79 @@ def welcome():
 
     return difficulty
 
+def display_hangman(tries):
+    phases = [
+       textwrap.dedent("""
+            ________
+            |/     |
+            |      💀
+            |     /|\\
+            |     / \\
+            |
+
+        """),
+        textwrap.dedent("""
+            ________
+            |/     |
+            |      🥵
+            |     /|\\
+            |     /
+            |
+            
+        """),
+        textwrap.dedent("""
+            ________
+            |/     |
+            |      😱
+            |     /|\\
+            |     
+            |
+            
+        """),
+        textwrap.dedent("""
+            ________
+            |/     |
+            |      😨
+            |     /|
+            |     
+            |
+            
+        """),
+        textwrap.dedent("""
+            ________
+            |/     |
+            |      😩
+            |      |
+            |     
+            |
+            
+        """),
+        textwrap.dedent("""
+            ________
+            |/     |
+            |      😲
+            |        
+            |     
+            |
+            
+        """),
+        textwrap.dedent("""
+            ________
+            |/     |
+            |     
+            |     
+            |     
+            |
+            
+        """)
+    ]
+
+    return phases[tries]
+
 def main():
     selected_difficulty = welcome()
     word = get_word(selected_difficulty)
     
 
 main()
+
