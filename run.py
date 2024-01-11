@@ -77,6 +77,25 @@ def welcome():
 
     return difficulty
 
+
+def display_word(word, letters_guessed):
+    """
+    Function to loop through each letter in
+    the word and show each letter that has been
+    correctly guessed by the user, and to 
+    hide all other letters, function will
+    then return the word
+    """
+    hidden_word = ''
+    for letter in word:
+        if letter in letters_guessed:
+            hidden_word += letter
+        else:
+            hidden_word += '_'
+    
+    return hidden_word
+
+
 def display_hangman(tries):
     """
     Function to display hangman phases
@@ -162,6 +181,7 @@ def display_hangman(tries):
     ]
 
     return phases[tries]
+
 
 def main():
     selected_difficulty = welcome()
