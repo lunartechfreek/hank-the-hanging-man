@@ -96,6 +96,21 @@ def display_word(word, letters_guessed):
     return hidden_word
 
 
+def play(word):
+
+
+def letter_guess():
+
+
+def word_guess():
+
+
+def update_game_word():
+
+
+def game_end():
+
+
 def display_hangman(tries):
     """
     Function to display hangman phases
