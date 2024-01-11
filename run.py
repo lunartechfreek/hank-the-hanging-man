@@ -51,7 +51,11 @@ def select_difficulty():
 
 def welcome():
     """
-    Function to handle the start of the game
+    Function to handle the start of the game,
+    and to pass the user the choice of difficulty.
+    This will return the array that was previously
+    selected by the user in the select_difficulty
+    function
     """
     run_story(story.intro)
 
