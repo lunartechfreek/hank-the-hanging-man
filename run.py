@@ -133,6 +133,21 @@ def play(word):
     game_end(guessed, word)
         
 
+def letter_guess(guess, word, word_completion, guessed, guessed_letters, tries):
+    if guess in guessed_letters:
+        print(f'You already guessed the letter {guess}, silly!')
+    elif guess not in word:
+        print(f'Ohh dear... {guess}, is not in the word')
+        tries -= 1
+        guessed_letters.append(guess)    
+    else:
+        print(f'Well done! {guess} is in the word!')
+        guessed_letters.append(guess)
+        update_word(word, guess, word_completion)
+        if '_' not in word_completion:
+            guessed = True
+
+
 
 def display_hangman(tries):
     """
