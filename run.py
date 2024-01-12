@@ -148,6 +148,18 @@ def letter_guess(guess, word, word_completion, guessed, guessed_letters, tries):
             guessed = True
 
 
+def word_guess(guess, word, word_completion, guessed, guessed_words, tries):
+    if guess in guessed_words:
+        print(f'You already guessed the word {guess}, silly!')
+    elif guess != word:
+        print(f'Ohh dear... {guess}, is not the word')
+        tries -= 1
+        guessed_words.append(guess)
+    else:
+        guessed = True
+        word_completion = word
+    
+
 
 def display_hangman(tries):
     """
