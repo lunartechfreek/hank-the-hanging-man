@@ -168,6 +168,12 @@ def update_word(word, guess, word_completion):
     return "".join(word_as_list)
 
 
+def game_end(guessed, word):
+    if guessed:
+        print('Well done you saved Hank!')
+    else:
+        print(f'Sorry you ran out of tries, the word was {word}')
+
 
 def display_hangman(tries):
     """
