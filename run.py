@@ -97,18 +97,41 @@ def display_word(word, letters_guessed):
 
 
 def play(word):
+    """
+    Main function to play the game,
+    has an input to take the guess from the user
+    which is then validated and stored in a variable,
+    other functions are then called to handle the 
+    users guess.
+    """
+    word_completion = '_' * len(word)
+    guessed = False
+    guessed_letters = []
+    guessed_words = []
+    tries = 6
 
+    print("Let's save Hank!")
+    print(display_hangman(tries))
+    print(display_word(word_completion, guessed_letters))
+    print('\n')
 
-def letter_guess():
+    while not guessed and tries > 0:
+        guess = input('Please guess a letter or the full word: ').upper()
 
+        if len(guess) == 1 and guess.isalpha():
+            letter_guess(guess, word, word_completion, guessed, guessed_letters, tries)
+        elif len(guess) == len(word) and guess.isalpha():
+            word_guess(guess, word, word_completion, guessed, guessed_words, tries)
+        else:
+            print('Oh no! This is not a valid guess!')
+            print('Please guess a letter or word using only letters!')
 
-def word_guess():
+        print(display_hangman(tries))
+        print(display_word(word_completion, guessed_letters))
+        print('\n')
 
-
-def update_game_word():
-
-
-def game_end():
+    game_end(guessed, word)
+        
 
 
 def display_hangman(tries):
