@@ -160,6 +160,14 @@ def word_guess(guess, word, word_completion, guessed, guessed_words, tries):
         word_completion = word
     
 
+def update_word(word, guess, word_completion):
+    word_as_list = list(word_completion)
+    indices = [i for i, letter in enumerate(word) if letter == guess]
+    for index in indices:
+        word_as_list[index] = guess
+    return "".join(word_as_list)
+
+
 
 def display_hangman(tries):
     """
