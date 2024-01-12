@@ -118,7 +118,7 @@ def play(word):
         guess = input('Please guess a letter or the full word: ').upper()
 
         if len(guess) == 1 and guess.isalpha():
-            letter_guess(guess, word, word_completion, guessed, guessed_letters, tries)
+            word_completion = letter_guess(guess, word, word_completion, guessed, guessed_letters, tries)
         elif len(guess) == len(word) and guess.isalpha():
             word_guess(guess, word, word_completion, guessed, guessed_words, tries)
         else:
@@ -142,9 +142,11 @@ def letter_guess(guess, word, word_completion, guessed, guessed_letters, tries):
     else:
         print(f'Well done! {guess} is in the word!')
         guessed_letters.append(guess)
-        update_word(word, guess, word_completion)
+        word_completion = update_word(word, guess, word_completion)
         if '_' not in word_completion:
             guessed = True
+    
+    return word_completion
 
 
 def word_guess(guess, word, word_completion, guessed, guessed_words, tries):
