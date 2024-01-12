@@ -67,8 +67,7 @@ def welcome():
             print('\nGoodbye!')
             quit()
         elif user_input == 'Y':
-            print("\nLet's save Hank!...")
-            print("First let's choose the difficulty...\n")
+            print("Great! Let's choose the difficulty...\n")
             difficulty = select_difficulty()
             break
         else:
@@ -86,14 +85,14 @@ def display_word(word, letters_guessed):
     hide all other letters, function will
     then return the word
     """
-    hidden_word = ''
+    displayed_word = ''
     for letter in word:
         if letter in letters_guessed:
-            hidden_word += letter
+            displayed_word += letter
         else:
-            hidden_word += '_'
+            displayed_word += '_'
     
-    return hidden_word
+    return displayed_word
 
 
 def play(word):
@@ -265,6 +264,7 @@ def display_hangman(tries):
 def main():
     selected_difficulty = welcome()
     word = get_word(selected_difficulty)
+    play(word)
     
 
 main()
