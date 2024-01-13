@@ -33,7 +33,7 @@ def select_difficulty():
         print('Type E for easy')
         print('Type M for medium')
         print('Type H for hard\n')
-        user_input = input('Please type E, M or H ').upper()  
+        user_input = input('Please type E, M or H \n').upper()  
 
         if user_input == 'E':
             run_story(story.easy)
@@ -65,7 +65,7 @@ def welcome():
 
     while True:
         # Loop to ask user if they would like to play
-        user_input = input('Do you accept the challange? (Y/N) ').upper()  
+        user_input = input('Do you accept the challange? (Y/N) \n').upper()  
 
         if user_input == 'N':
             print('\nGoodbye!')
@@ -121,7 +121,7 @@ def play(word):
     print('\n')
 
     while not GUESSED and TRIES > 0:
-        guess = input('Please guess a letter or the full word: ').upper()
+        guess = input('Please guess a letter or the full word: \n').upper()
 
         if len(guess) == 1 and guess.isalpha():
             word_completion = letter_guess(guess, word, word_completion, guessed_letters)
