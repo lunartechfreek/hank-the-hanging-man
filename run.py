@@ -184,7 +184,7 @@ def update_word(word, guess, word_completion):
 def game_end(word):
     global GUESSED
     if GUESSED:
-        print('Well done you saved Hank!')
+        print(f'Well done the word was {word}! You saved Hank!')
     else:
         print(f'Sorry you ran out of tries, the word was {word}')
 
