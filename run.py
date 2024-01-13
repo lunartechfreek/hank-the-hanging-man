@@ -123,7 +123,7 @@ def play(word):
 
         if len(guess) == 1 and guess.isalpha():
             word_completion = letter_guess(guess, word, word_completion, guessed, guessed_letters)
-        elif len(guess) == len(word) and guess.isalpha():
+        elif len(guess) > 1 and guess.isalpha():
             word_guess(guess, word, word_completion, guessed, guessed_words)
         else:
             print('Oh no! This is not a valid guess!')
