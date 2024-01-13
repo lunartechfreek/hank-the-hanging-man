@@ -61,6 +61,14 @@ def welcome():
     selected by the user in the select_difficulty
     function
     """
+    while True:
+        user_name = input('Please enter your name: \n').capitalize()
+        if user_name.isalpha():
+            break
+        else:
+            print(f'\n{user_name} is not a valid name')
+            print(f'Please use alphabetic characters only\n')
+
     run_story(story.intro)
 
     while True:
@@ -78,7 +86,7 @@ def welcome():
             # Handles invalid input by the user
             print(f'\n{user_input} is an invalid input. Please enter Y or N.\n')
 
-    return difficulty
+    return difficulty, user_name
 
 
 def display_word(word, letters_guessed):
@@ -99,7 +107,7 @@ def display_word(word, letters_guessed):
     return displayed_word
 
 
-def play(word):
+def play(word, user_name):
     """
     Main function to play the game,
     has an input to take the guess from the user
@@ -135,7 +143,7 @@ def play(word):
         print(display_word(word_completion, guessed_letters))
         print('\n')
 
-    game_end(word)
+    game_end(word, user_name)
         
 
 def letter_guess(guess, word, word_completion, guessed_letters):
@@ -181,12 +189,12 @@ def update_word(word, guess, word_completion):
     return "".join(word_as_list)
 
 
-def game_end(word):
+def game_end(word, user_name):
     global GUESSED
     if GUESSED:
         print(f'Well done the word was {word}! You saved Hank!')
     else:
-        print(f'Sorry you ran out of tries, the word was {word}')
+        print(f'Sorry {user_name} you ran out of tries, the word was {word}')
 
 
 def replay():
@@ -301,9 +309,9 @@ def display_hangman(tries):
 
 
 def main():
-    selected_difficulty = welcome()
+    selected_difficulty, user_name = welcome()
     word = get_word(selected_difficulty)
-    play(word)
+    play(word, user_name)
 
     while True:
         replay_difficulty = replay()
@@ -312,7 +320,7 @@ def main():
             break
         else:
             replay_word = get_word(replay_difficulty)
-            play(replay_word)
+            play(replay_word, user_name)
     
 
 main()
