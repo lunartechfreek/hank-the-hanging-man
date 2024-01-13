@@ -189,6 +189,30 @@ def game_end(word):
         print(f'Sorry you ran out of tries, the word was {word}')
 
 
+def replay():
+    """
+    Function to handle replaying the game,
+    changing the difficulty should the user choose to,
+    and checking the users input is valid
+    """
+    while True:
+        # Loop to ask user if they would like to play again
+        user_input = input('Would you like to play again? (Y/N) \n').upper()  
+
+        if user_input == 'N':
+            print('\nGoodbye!')
+            quit()
+        elif user_input == 'Y':
+            print("\nGreat! Let's choose the difficulty...\n")
+            difficulty = select_difficulty()
+            break
+        else:
+            # Handles invalid input by the user
+            print(f'\n{user_input} is an invalid input. Please enter Y or N.\n')
+
+    return difficulty
+
+
 def display_hangman(tries):
     """
     Function to display hangman phases
