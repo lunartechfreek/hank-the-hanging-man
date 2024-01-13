@@ -71,7 +71,7 @@ def welcome():
             print('\nGoodbye!')
             quit()
         elif user_input == 'Y':
-            print("Great! Let's choose the difficulty...\n")
+            print("\nGreat! Let's choose the difficulty...\n")
             difficulty = select_difficulty()
             break
         else:
@@ -304,6 +304,15 @@ def main():
     selected_difficulty = welcome()
     word = get_word(selected_difficulty)
     play(word)
+
+    while True:
+        replay_difficulty = replay()
+        if replay_difficulty is None:
+            print('Thanks for playing! Goodbye!')
+            break
+        else:
+            replay_word = get_word(replay_difficulty)
+            play(replay_word)
     
 
 main()
