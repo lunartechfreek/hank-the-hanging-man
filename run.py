@@ -5,6 +5,7 @@ import textwrap
 
 
 global TRIES
+global GUESSED
 
 def get_word(difficulty_selected):
     """
@@ -107,7 +108,8 @@ def play(word):
     users guess.
     """
     word_completion = '_' * len(word)
-    guessed = False
+    global GUESSED
+    GUESSED = False
     guessed_letters = []
     guessed_words = []
     global TRIES
@@ -118,13 +120,13 @@ def play(word):
     print(display_word(word_completion, guessed_letters))
     print('\n')
 
-    while not guessed and TRIES > 0:
+    while not GUESSED and TRIES > 0:
         guess = input('Please guess a letter or the full word: ').upper()
 
         if len(guess) == 1 and guess.isalpha():
-            word_completion = letter_guess(guess, word, word_completion, guessed, guessed_letters)
+            word_completion = letter_guess(guess, word, word_completion, guessed_letters)
         elif len(guess) > 1 and guess.isalpha():
-            word_guess(guess, word, word_completion, guessed, guessed_words)
+            word_guess(guess, word, word_completion, guessed_words)
         else:
             print('Oh no! This is not a valid guess!')
             print('Please guess a letter or word using only letters!')
@@ -133,11 +135,12 @@ def play(word):
         print(display_word(word_completion, guessed_letters))
         print('\n')
 
-    game_end(guessed, word)
+    game_end(word)
         
 
-def letter_guess(guess, word, word_completion, guessed, guessed_letters):
+def letter_guess(guess, word, word_completion, guessed_letters):
     global TRIES
+    global GUESSED
     if guess in guessed_letters:
         print(f'You already guessed the letter {guess}, silly!')
     elif guess not in word:
@@ -149,13 +152,14 @@ def letter_guess(guess, word, word_completion, guessed, guessed_letters):
         guessed_letters.append(guess)
         word_completion = update_word(word, guess, word_completion)
         if '_' not in word_completion:
-            guessed = True
+            GUESSED = True
     
     return word_completion
 
 
-def word_guess(guess, word, word_completion, guessed, guessed_words):
+def word_guess(guess, word, word_completion, guessed_words):
     global TRIES
+    global GUESSED
     if guess in guessed_words:
         print(f'You already guessed the word {guess}, silly!')
     elif guess != word:
@@ -163,7 +167,7 @@ def word_guess(guess, word, word_completion, guessed, guessed_words):
         TRIES -= 1
         guessed_words.append(guess)
     else:
-        guessed = True
+        GUESSED = True
         word_completion = word
 
     
@@ -177,8 +181,9 @@ def update_word(word, guess, word_completion):
     return "".join(word_as_list)
 
 
-def game_end(guessed, word):
-    if guessed:
+def game_end(word):
+    global GUESSED
+    if GUESSED:
         print('Well done you saved Hank!')
     else:
         print(f'Sorry you ran out of tries, the word was {word}')
@@ -278,4 +283,5 @@ def main():
     
 
 main()
+
 
