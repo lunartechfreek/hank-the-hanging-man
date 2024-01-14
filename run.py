@@ -178,11 +178,11 @@ def letter_guess(guess, word, word_completion, guessed_letters):
     if guess in guessed_letters:
         print(f'\nYou already guessed the letter {guess}, silly!')
     elif guess not in word:
-        print(f'\nOhh dear... {guess}, is not in the word')
+        print(f'\nOhh dear... {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL}, is not in the word')
         TRIES -= 1
         guessed_letters.append(guess)    
     else:
-        print(f'\nWell done! {guess} is in the word!')
+        print(f'\nWell done! {Fore.GREEN}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL} is in the word!')
         guessed_letters.append(guess)
         word_completion = update_word(word, guess, word_completion)
         if '_' not in word_completion:
