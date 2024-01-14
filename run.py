@@ -49,7 +49,8 @@ def select_difficulty():
             break
         else:
             # Handles invalid input by the user
-            print('Invalid input. Please enter .\n')
+            print(f'\nSorry, {user_input} is not a valid input.')
+            print('Please enter the letter E, M, or H\n')
 
     return difficulty
 
@@ -61,19 +62,20 @@ def welcome():
     selected by the user in the select_difficulty
     function
     """
+    print('Welcome to Hank the Hanging Man!')
     while True:
         user_name = input('Please enter your name: \n').capitalize()
         if user_name.isalpha():
             break
         else:
-            print(f'\n{user_name} is not a valid name')
-            print(f'Please use alphabetic characters only\n')
+            print(f'\nSorry, {user_name} is not a valid name')
+            print(f'Please use alphabetic characters only.\n')
 
     run_story(story.intro)
 
     while True:
         # Loop to ask user if they would like to play
-        user_input = input('Do you accept the challange? (Y/N) \n').upper()  
+        user_input = input(f'So {user_name}, do you accept the challange? (Y/N) \n').upper()  
 
         if user_input == 'N':
             print('\nGoodbye!')
@@ -84,7 +86,8 @@ def welcome():
             break
         else:
             # Handles invalid input by the user
-            print(f'\n{user_input} is an invalid input. Please enter Y or N.\n')
+            print(f'\nSorry, {user_input} is an invalid input.')
+            print('Please enter Y or N.\n')
 
     return difficulty, user_name
 
@@ -136,7 +139,7 @@ def play(word, user_name):
         elif len(guess) > 1 and guess.isalpha():
             word_guess(guess, word, word_completion, guessed_words)
         else:
-            print('Oh no! This is not a valid guess!')
+            print(f'\nOh no! {guess} is not a valid guess!')
             print('Please guess a letter or word using only letters!')
 
         print(display_hangman(TRIES))
@@ -192,9 +195,11 @@ def update_word(word, guess, word_completion):
 def game_end(word, user_name):
     global GUESSED
     if GUESSED:
-        print(f'Well done the word was {word}! You saved Hank!')
+        print(f'Well done {user_name}!')
+        print(f'The word was {word}! You saved Hank!')
     else:
-        print(f'Sorry {user_name} you ran out of tries, the word was {word}')
+        print(f'Sorry {user_name}')
+        print(f'You ran out of tries, the word was {word}')
 
 
 def replay():
@@ -216,7 +221,8 @@ def replay():
             break
         else:
             # Handles invalid input by the user
-            print(f'\n{user_input} is an invalid input. Please enter Y or N.\n')
+            print(f'\n{user_input} is not a valid input.')
+            print('Please enter Y or N.\n')
 
     return difficulty
 
