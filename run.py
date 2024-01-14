@@ -150,6 +150,7 @@ def play(word, user_name):
 
     while not GUESSED and TRIES > 0:
         guess = input('Please guess a letter or the full word: \n').upper()
+        clear()
 
         if len(guess) == 1 and guess.isalpha():
             word_completion = letter_guess(guess, word, word_completion, guessed_letters)
