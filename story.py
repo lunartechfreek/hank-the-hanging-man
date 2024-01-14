@@ -1,7 +1,7 @@
 # File to store all story narratives
 
 # Intoduction narrative
-intro = """Welcome to Hank the Hanging Man!\n
+intro = """
 The year is 1705 and you were just in the middle of taking your annual bath,
 when suddenly you get a knock at the door because your good buddy Hank has 
 got himself into a bit of a pickle! The villagers say that Hank is a bit of 
