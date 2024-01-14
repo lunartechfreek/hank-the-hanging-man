@@ -50,19 +50,19 @@ def select_difficulty():
             run_story(story.easy)
             difficulty = words.easy_words
             print("Let's save Hank!...")
-            sleep(5)
+            sleep(6)
             break
         elif user_input == 'M':
             run_story(story.medium)
             difficulty = words.medium_words
             print("Let's save Hank!...")
-            sleep(5)
+            sleep(7)
             break
         elif user_input == 'H':
             run_story(story.hard)
             difficulty = words.hard_words
             print("Let's save Hank!...")
-            sleep(5)
+            sleep(8)
             break
         else:
             # Handles invalid input by the user
@@ -100,7 +100,6 @@ def welcome():
             quit()
         elif user_input == 'Y':
             print("\nGreat! Let's choose the difficulty...\n")
-            sleep(1)
             difficulty = select_difficulty()
             break
         else:
