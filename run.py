@@ -43,19 +43,26 @@ def select_difficulty():
         print('Type E for easy')
         print('Type M for medium')
         print('Type H for hard\n')
-        user_input = input('Please type E, M or H \n').upper()  
+        user_input = input('Please type E, M or H \n').upper()
+        clear()  
 
         if user_input == 'E':
             run_story(story.easy)
             difficulty = words.easy_words
+            print("Let's save Hank!...")
+            sleep(5)
             break
         elif user_input == 'M':
             run_story(story.medium)
             difficulty = words.medium_words
+            print("Let's save Hank!...")
+            sleep(5)
             break
         elif user_input == 'H':
             run_story(story.hard)
             difficulty = words.hard_words
+            print("Let's save Hank!...")
+            sleep(5)
             break
         else:
             # Handles invalid input by the user
