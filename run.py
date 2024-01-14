@@ -161,7 +161,7 @@ def play(word, user_name):
         elif len(guess) > 1 and guess.isalpha():
             word_guess(guess, word, word_completion, guessed_words)
         else:
-            print(f'\nOh no! {guess} is not a valid guess!')
+            print(f'\nOh no! {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL} is not a valid guess!')
             print('Please guess a letter or word using only letters!')
 
         print(display_hangman(TRIES))
