@@ -173,9 +173,9 @@ def word_guess(guess, word, word_completion, guessed_words):
     global TRIES
     global GUESSED
     if guess in guessed_words:
-        print(f'You already guessed the word {guess}, silly!')
+        print(f'\nYou already guessed the word {guess}, silly!')
     elif guess != word:
-        print(f'Ohh dear... {guess}, is not the word')
+        print(f'\nOhh dear... {guess}, is not the word')
         TRIES -= 1
         guessed_words.append(guess)
     else:
