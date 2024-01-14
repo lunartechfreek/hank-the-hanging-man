@@ -92,13 +92,15 @@ def welcome():
 
     while True:
         # Loop to ask user if they would like to play
-        user_input = input(f'So {user_name}, do you accept the challange? (Y/N) \n').upper()  
+        user_input = input(f'So {user_name}, do you accept the challange? (Y/N) \n').upper()
+        clear()  
 
         if user_input == 'N':
             print('\nGoodbye!')
             quit()
         elif user_input == 'Y':
             print("\nGreat! Let's choose the difficulty...\n")
+            sleep(1)
             difficulty = select_difficulty()
             break
         else:
@@ -143,7 +145,6 @@ def play(word, user_name):
     global TRIES
     TRIES = 6
 
-    print("Let's save Hank!")
     print(display_hangman(TRIES))
     print(display_word(word_completion, guessed_letters))
     print(f'\nThe word is {len(word)} letters long')
