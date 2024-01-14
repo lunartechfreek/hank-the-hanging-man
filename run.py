@@ -5,6 +5,10 @@ import textwrap
 import os
 from time import sleep
 
+import colorama
+from colorama import Fore
+colorama.init(autoreset=True)
+
 
 global TRIES
 global GUESSED
