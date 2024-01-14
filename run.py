@@ -70,7 +70,7 @@ def select_difficulty():
             break
         else:
             # Handles invalid input by the user
-            print(f'\nSorry, {user_input} is not a valid input.')
+            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{user_input}{Fore.RESET}{Style.RESET_ALL} is not a valid input.')
             print('Please enter the letter E, M, or H\n')
 
     return difficulty
