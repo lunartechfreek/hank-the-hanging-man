@@ -242,7 +242,6 @@ def display_hangman(tries):
             |     /|\\
             |     / \\
             |
-
         """),
         # Phase 5, when tries = 1
         # Noose, head, torso, both arms, leg
@@ -253,7 +252,6 @@ def display_hangman(tries):
             |     /|\\
             |     /
             |
-            
         """),
         # Phase 5, when tries = 2
         # Noose, head, torso, both arms
@@ -263,8 +261,7 @@ def display_hangman(tries):
             |      😱
             |     /|\\
             |     
-            |
-            
+            |    
         """),
         # Phase 3, when tries = 3
         # Noose, head, torso, arm
@@ -274,8 +271,7 @@ def display_hangman(tries):
             |      😨
             |     /|
             |     
-            |
-            
+            |           
         """),
         # Phase 2, when tries = 4
         # Noose, head, torso
@@ -285,8 +281,7 @@ def display_hangman(tries):
             |      😩
             |      |
             |     
-            |
-            
+            |          
         """),
         # Phase 1, when tries = 5
         # Noose, head
@@ -296,8 +291,7 @@ def display_hangman(tries):
             |      😲
             |        
             |     
-            |
-            
+            |          
         """),
         # Phase 0, game start when tries = 6
         # Empty noose
@@ -307,8 +301,7 @@ def display_hangman(tries):
             |     
             |     
             |     
-            |
-            
+            |           
         """)
     ]
 
