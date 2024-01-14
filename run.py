@@ -6,7 +6,7 @@ import os
 from time import sleep
 
 import colorama
-from colorama import Fore
+from colorama import Fore, Style
 colorama.init(autoreset=True)
 
 
