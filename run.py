@@ -129,7 +129,7 @@ def play(word, user_name):
     print("Let's save Hank!")
     print(display_hangman(TRIES))
     print(display_word(word_completion, guessed_letters))
-    print('\n')
+    print(f'\nThe word is {len(word)} letters long')
 
     while not GUESSED and TRIES > 0:
         guess = input('Please guess a letter or the full word: \n').upper()
@@ -144,7 +144,7 @@ def play(word, user_name):
 
         print(display_hangman(TRIES))
         print(display_word(word_completion, guessed_letters))
-        print('\n')
+        print(f'\nThe word is {len(word)} letters long')
 
     game_end(word, user_name)
         
