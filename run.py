@@ -204,8 +204,8 @@ def word_guess(guess, word, word_completion, guessed_words):
         GUESSED = True
         word_completion = word
 
-    
-    
+        
+
 
 def update_word(word, guess, word_completion):
     word_as_list = list(word_completion)
@@ -218,11 +218,11 @@ def update_word(word, guess, word_completion):
 def game_end(word, user_name):
     global GUESSED
     if GUESSED:
-        print(f'\nWell done {user_name}!')
-        print(f'The word was {word}! You saved Hank!\n')
+        print(f'\n{Fore.GREEN}{Style.BRIGHT}Well done {user_name}{Fore.RESET}{Style.RESET_ALL}!')
+        print(f'The word was {Fore.GREEN}{Style.BRIGHT}{word}{Fore.RESET}{Style.RESET_ALL}! You saved Hank!\n')
     else:
-        print(f'\nSorry {user_name}')
-        print(f'You ran out of tries, the word was {word}\n')
+        print(f'\n{Fore.RED}{Style.BRIGHT}Sorry {user_name}{Fore.RESET}{Style.RESET_ALL}')
+        print(f'You ran out of tries, the word was {Fore.GREEN}{Style.BRIGHT}{word}{Fore.RESET}{Style.RESET_ALL}\n')
 
 
 def replay():
