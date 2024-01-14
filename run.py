@@ -144,7 +144,8 @@ def play(word, user_name):
 
         print(display_hangman(TRIES))
         print(display_word(word_completion, guessed_letters))
-        print(f'\nThe word is {len(word)} letters long')
+        if TRIES > 0:
+            print(f'\nThe word is {len(word)} letters long')
 
     game_end(word, user_name)
         
