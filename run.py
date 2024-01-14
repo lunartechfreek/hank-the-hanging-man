@@ -228,7 +228,8 @@ def replay():
     """
     while True:
         # Loop to ask user if they would like to play again
-        user_input = input('Would you like to play again? (Y/N) \n').upper()  
+        user_input = input('Would you like to play again? (Y/N) \n').upper()
+        clear()
 
         if user_input == 'N':
             print('\nGoodbye!')
