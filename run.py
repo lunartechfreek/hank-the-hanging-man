@@ -2,6 +2,8 @@ import random
 import words 
 import story
 import textwrap
+import os
+from time import sleep
 
 
 global TRIES
