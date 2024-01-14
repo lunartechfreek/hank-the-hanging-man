@@ -9,6 +9,14 @@ from time import sleep
 global TRIES
 global GUESSED
 
+def clear():
+    """
+    Clear function to clean-up the terminal.
+    Function checks the users operating system to
+    use the correct method to clear the terminal.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
 def get_word(difficulty_selected):
     """
     Function to return random word, taking
