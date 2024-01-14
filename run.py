@@ -197,7 +197,7 @@ def word_guess(guess, word, word_completion, guessed_words):
     if guess in guessed_words:
         print(f'\nYou already guessed the word {guess}, silly!')
     elif guess != word:
-        print(f'\nOhh dear... {guess}, is not the word')
+        print(f'\nOhh dear... {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL}, is not the word')
         TRIES -= 1
         guessed_words.append(guess)
     else:
