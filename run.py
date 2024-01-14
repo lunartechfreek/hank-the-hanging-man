@@ -3,7 +3,6 @@ import words
 import story
 import textwrap
 import os
-from time import sleep
 
 import colorama
 from colorama import Fore, Style
@@ -54,19 +53,16 @@ def select_difficulty():
             run_story(story.easy)
             difficulty = words.easy_words
             print("Let's save Hank!...")
-            sleep(6)
             break
         elif user_input == 'M':
             run_story(story.medium)
             difficulty = words.medium_words
             print("Let's save Hank!...")
-            sleep(7)
             break
         elif user_input == 'H':
             run_story(story.hard)
             difficulty = words.hard_words
             print("Let's save Hank!...")
-            sleep(8)
             break
         else:
             # Handles invalid input by the user
