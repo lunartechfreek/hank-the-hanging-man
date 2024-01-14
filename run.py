@@ -108,7 +108,7 @@ def welcome():
             break
         else:
             # Handles invalid input by the user
-            print(f'\nSorry, {user_input} is an invalid input.')
+            print(f'\nSorry, {Fore.RED}{user_input}{Fore.RESET} is an invalid input.')
             print('Please enter Y or N.\n')
 
     return difficulty, user_name
