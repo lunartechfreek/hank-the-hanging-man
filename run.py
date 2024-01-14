@@ -89,7 +89,7 @@ def welcome():
         if user_name.isalpha():
             break
         else:
-            print(f'\nSorry, {user_name} is not a valid name')
+            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{user_name}{Fore.RESET}{Style.RESET_ALL} is not a valid name')
             print(f'Please use alphabetic characters only.\n')
 
     run_story(story.intro)
