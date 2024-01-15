@@ -1,14 +1,16 @@
+# Import modules
 import random
 import words
 import story
 import textwrap
 import os
-
 import colorama
 from colorama import Fore, Style
+
+# To initialize colorama and to autoreset styles
 colorama.init(autoreset=True)
 
-
+# Global variables that are modified in different functions
 global TRIES
 global GUESSED
 
@@ -46,7 +48,6 @@ def select_difficulty():
     for the difficulty chosen
     """
     while True:
-        # Loop to ask user to choose a difficulty
         print('Type E for easy')
         print('Type M for medium')
         print('Type H for hard\n')
@@ -90,6 +91,7 @@ def welcome():
         if user_name.isalpha():
             break
         else:
+            # Handles invalid input by the user
             print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{user_name}{Fore.RESET}{Style.RESET_ALL} is not a valid name')  # noqa
             print(f'Please use alphabetic characters only.\n')
 
@@ -162,6 +164,7 @@ def play(word, user_name):
         elif len(guess) > 1 and guess.isalpha():
             word_guess(guess, word, word_completion, guessed_words)
         else:
+            # Handles invalid input by the user
             print(f'\nOh no! {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL} is not a valid guess!')  # noqa
             print('Please guess a letter or word using only letters!')
 
@@ -177,6 +180,7 @@ def letter_guess(guess, word, word_completion, guessed_letters):
     global TRIES
     global GUESSED
     if guess in guessed_letters:
+        # Handles duplicate inputs by the user
         print(f'\nYou already guessed the letter {guess}, silly!')
     elif guess not in word:
         print(f'\nOhh dear... {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL}, is not in the word')  # noqa
@@ -196,6 +200,7 @@ def word_guess(guess, word, word_completion, guessed_words):
     global TRIES
     global GUESSED
     if guess in guessed_words:
+        # Handles duplicate inputs by the user
         print(f'\nYou already guessed the word {guess}, silly!')
     elif guess != word:
         print(f'\nOhh dear... {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL}, is not the word')  # noqa
@@ -231,7 +236,6 @@ def replay():
     and checking the users input is valid
     """
     while True:
-        # Loop to ask user if they would like to play again
         user_input = input('Would you like to play again? (Y/N) \n').upper()
         clear()
 
@@ -255,7 +259,7 @@ def display_hangman(tries):
     Function to display hangman phases
     """
     phases = [
-        # Phase 7, game over when tries = 0
+        # Phase 6, game over when tries = 0
         # Noose, head, torso, both arms, both legs
         textwrap.dedent("""
             ________
@@ -275,7 +279,7 @@ def display_hangman(tries):
             |     /
             |
         """),
-        # Phase 5, when tries = 2
+        # Phase 4, when tries = 2
         # Noose, head, torso, both arms
         textwrap.dedent("""
             ________
@@ -335,6 +339,7 @@ def main():
     word = get_word(selected_difficulty)
     play(word, user_name)
 
+    # Loop to ask the user if they want to play again
     while True:
         replay_difficulty = replay()
         if replay_difficulty is None:
