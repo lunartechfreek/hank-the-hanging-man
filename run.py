@@ -361,6 +361,9 @@ def display_hangman(tries):
 
 
 def main():
+    """
+    Main function to run the game
+    """
     selected_difficulty, user_name = welcome()
     word = get_word(selected_difficulty)
     play(word, user_name)
