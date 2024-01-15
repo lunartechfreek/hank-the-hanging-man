@@ -224,6 +224,13 @@ def word_guess(guess, word, word_completion, guessed_words):
 
 
 def update_word(word, guess, word_completion):
+    """
+    Function to update the game word,
+    replaces the underscores with the letter
+    if the letter is correct.
+    Code borrowed from Youtube tutorial:
+    https://www.youtube.com/watch?v=m4nEnsavl6w&list=PLVVxU9zkt8071XW8qgYXv_62rgO-HwRal&index=5&t=491s
+    """
     word_as_list = list(word_completion)
     indices = [i for i, letter in enumerate(word) if letter == guess]
     for index in indices:
