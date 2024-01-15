@@ -1,5 +1,5 @@
 import random
-import words 
+import words
 import story
 import textwrap
 import os
@@ -12,6 +12,7 @@ colorama.init(autoreset=True)
 global TRIES
 global GUESSED
 
+
 def clear():
     """
     Clear function to clean-up the terminal.
@@ -19,6 +20,7 @@ def clear():
     use the correct method to clear the terminal.
     """
     os.system("cls" if os.name == "nt" else "clear")
+
 
 def get_word(difficulty_selected):
     """
@@ -28,6 +30,7 @@ def get_word(difficulty_selected):
     word = random.choice(difficulty_selected)
     return word.upper()
 
+
 def run_story(story):
     """
     Function to display relevant section
@@ -35,10 +38,11 @@ def run_story(story):
     """
     print(story)
 
+
 def select_difficulty():
     """
     Function for user to choose a difficulty,
-    which will return the array of words 
+    which will return the array of words
     for the difficulty chosen
     """
     while True:
@@ -47,7 +51,7 @@ def select_difficulty():
         print('Type M for medium')
         print('Type H for hard\n')
         user_input = input('Please type E, M or H \n').upper()
-        clear()  
+        clear()
 
         if user_input == 'E':
             run_story(story.easy)
@@ -66,10 +70,11 @@ def select_difficulty():
             break
         else:
             # Handles invalid input by the user
-            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{user_input}{Fore.RESET}{Style.RESET_ALL} is not a valid input.')
+            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{user_input}{Fore.RESET}{Style.RESET_ALL} is not a valid input.')  # noqa
             print('Please enter the letter E, M, or H\n')
 
     return difficulty
+
 
 def welcome():
     """
@@ -93,7 +98,7 @@ def welcome():
     while True:
         # Loop to ask user if they would like to play
         user_input = input(f'So {user_name}, do you accept the challange? (Y/N) \n').upper()
-        clear()  
+        clear()
 
         if user_input == 'N':
             print('\nGoodbye!')
@@ -114,7 +119,7 @@ def display_word(word, letters_guessed):
     """
     Function to loop through each letter in
     the word and show each letter that has been
-    correctly guessed by the user, and to 
+    correctly guessed by the user, and to
     hide all other letters, function will
     then return the word
     """
@@ -124,7 +129,7 @@ def display_word(word, letters_guessed):
             displayed_word += letter
         else:
             displayed_word += '_'
-    
+
     return displayed_word
 
 
@@ -133,7 +138,7 @@ def play(word, user_name):
     Main function to play the game,
     has an input to take the guess from the user
     which is then validated and stored in a variable,
-    other functions are then called to handle the 
+    other functions are then called to handle the
     users guess.
     """
     word_completion = '_' * len(word)
@@ -166,7 +171,7 @@ def play(word, user_name):
             print(f'\nThe word is {len(word)} letters long')
 
     game_end(word, user_name)
-        
+
 
 def letter_guess(guess, word, word_completion, guessed_letters):
     global TRIES
@@ -176,14 +181,14 @@ def letter_guess(guess, word, word_completion, guessed_letters):
     elif guess not in word:
         print(f'\nOhh dear... {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL}, is not in the word')
         TRIES -= 1
-        guessed_letters.append(guess)    
+        guessed_letters.append(guess)
     else:
         print(f'\nWell done! {Fore.GREEN}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL} is in the word!')
         guessed_letters.append(guess)
         word_completion = update_word(word, guess, word_completion)
         if '_' not in word_completion:
             GUESSED = True
-    
+
     return word_completion
 
 
@@ -199,8 +204,6 @@ def word_guess(guess, word, word_completion, guessed_words):
     else:
         GUESSED = True
         word_completion = word
-
-        
 
 
 def update_word(word, guess, word_completion):
@@ -279,8 +282,8 @@ def display_hangman(tries):
             |/     |
             |      😱
             |     /|\\
-            |     
-            |    
+            |
+            |
         """),
         # Phase 3, when tries = 3
         # Noose, head, torso, arm
@@ -289,8 +292,8 @@ def display_hangman(tries):
             |/     |
             |      😨
             |     /|
-            |     
-            |           
+            |
+            |
         """),
         # Phase 2, when tries = 4
         # Noose, head, torso
@@ -299,8 +302,8 @@ def display_hangman(tries):
             |/     |
             |      😩
             |      |
-            |     
-            |          
+            |
+            |
         """),
         # Phase 1, when tries = 5
         # Noose, head
@@ -308,19 +311,19 @@ def display_hangman(tries):
             ________
             |/     |
             |      😲
-            |        
-            |     
-            |          
+            |
+            |
+            |
         """),
         # Phase 0, game start when tries = 6
         # Empty noose
         textwrap.dedent("""
             ________
             |/     |
-            |     
-            |     
-            |     
-            |           
+            |
+            |
+            |
+            |
         """)
     ]
 
@@ -340,8 +343,6 @@ def main():
         else:
             replay_word = get_word(replay_difficulty)
             play(replay_word, user_name)
-    
+
 
 main()
-
-
