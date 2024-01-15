@@ -177,6 +177,12 @@ def play(word, user_name):
 
 
 def letter_guess(guess, word, word_completion, guessed_letters):
+    """
+    Function to handle when the user guesses a word.
+    Checks for duplicate inputs.
+    Uses colorama to display feedback to the user in the relevant
+    colour dependant if the input is correct or not.
+    """
     global TRIES
     global GUESSED
     if guess in guessed_letters:
