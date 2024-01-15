@@ -137,11 +137,11 @@ def display_word(word, letters_guessed):
 
 def play(word, user_name):
     """
-    Main function to play the game,
-    has an input to take the guess from the user
-    which is then validated and stored in a variable,
-    other functions are then called to handle the
-    users guess.
+    Main function to play the game.
+    Has an input to take the guess from the user
+    which is then validated and stored in a variable.
+    Other functions are then called to handle the
+    users guess, and checks the users input is valid.
     """
     word_completion = '_' * len(word)
     global GUESSED
