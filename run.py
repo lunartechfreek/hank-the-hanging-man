@@ -170,6 +170,7 @@ def play(word, user_name):
 
         print(display_hangman(TRIES))
         print(display_word(word_completion, guessed_letters))
+        # Displays the length of word if the user has tries left
         if TRIES > 0:
             print(f'\nThe word is {len(word)} letters long')
 
@@ -286,7 +287,7 @@ def display_hangman(tries):
     Also removes indent from hangman graphic.    
     """
     phases = [
-        # Phase 6, game over when tries = 0
+        # Phase 7, game over when tries = 0
         # Noose, head, torso, both arms, both legs
         textwrap.dedent("""
             ________
@@ -296,7 +297,7 @@ def display_hangman(tries):
             |     / \\
             |
         """),
-        # Phase 5, when tries = 1
+        # Phase 6, when tries = 1
         # Noose, head, torso, both arms, leg
         textwrap.dedent("""
             ________
@@ -306,7 +307,7 @@ def display_hangman(tries):
             |     /
             |
         """),
-        # Phase 4, when tries = 2
+        # Phase 5, when tries = 2
         # Noose, head, torso, both arms
         textwrap.dedent("""
             ________
@@ -316,7 +317,7 @@ def display_hangman(tries):
             |
             |
         """),
-        # Phase 3, when tries = 3
+        # Phase 4, when tries = 3
         # Noose, head, torso, arm
         textwrap.dedent("""
             ________
@@ -326,7 +327,7 @@ def display_hangman(tries):
             |
             |
         """),
-        # Phase 2, when tries = 4
+        # Phase 3, when tries = 4
         # Noose, head, torso
         textwrap.dedent("""
             ________
@@ -336,7 +337,7 @@ def display_hangman(tries):
             |
             |
         """),
-        # Phase 1, when tries = 5
+        # Phase 2, when tries = 5
         # Noose, head
         textwrap.dedent("""
             ________
@@ -346,7 +347,7 @@ def display_hangman(tries):
             |
             |
         """),
-        # Phase 0, game start when tries = 6
+        # Phase 1, game start when tries = 6
         # Empty noose
         textwrap.dedent("""
             ________
