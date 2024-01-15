@@ -257,7 +257,7 @@ def display_hangman(tries):
     phases = [
         # Phase 7, game over when tries = 0
         # Noose, head, torso, both arms, both legs
-       textwrap.dedent("""
+        textwrap.dedent("""
             ________
             |/     |
             |      💀
