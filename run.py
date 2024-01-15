@@ -239,6 +239,13 @@ def update_word(word, guess, word_completion):
 
 
 def game_end(word, user_name):
+    """
+    Function to handle the end of the game.
+    Displays message to the user to let them know
+    if they won or failed.
+    Return message uses colorama to change the name
+    and word the relevant colour depending on the outcome.
+    """
     global GUESSED
     if GUESSED:
         print(f'\n{Fore.GREEN}{Style.BRIGHT}Well done {user_name}{Fore.RESET}{Style.RESET_ALL}!')  # noqa
