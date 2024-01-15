@@ -3,12 +3,12 @@
 # Intoduction narrative
 intro = """
 The year is 1705 and you were just in the middle of taking your annual bath,
-when suddenly you get a knock at the door because your good buddy Hank has 
-got himself into a bit of a pickle! The villagers say that Hank is a bit of 
+when suddenly you get a knock at the door because your good buddy Hank has
+got himself into a bit of a pickle! The villagers say that Hank is a bit of
 an idiot, and is bringing down peoples perception of the community!
 So they have taken it upon themselves to hang him in the town square!
 The only way they will let Hank live is if you agree to take him in and teach
-him how to function As a human being! But in order to do that the villagers 
+him how to function As a human being! But in order to do that the villagers
 need to make sure that you are not an idiot as well! So they challenge
 you to a game of hangman... (ironic eh?), to prove your intelligence!\n
 Do you accept the challenge? Or shall you let Hank hang for his stupidity?
@@ -37,7 +37,7 @@ His life depends on it!
 hard = """
 Well look at this, you have chosen hard 🤓\n
 Hank is filled with the upmost confidence in you!
-But has to consider that you have just made the game that 
+But has to consider that you have just made the game that
 decides his fate even harder for yourself!
 Let’s hope this bravery pays off…
 Hanks life depends on it!
