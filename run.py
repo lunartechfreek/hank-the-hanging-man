@@ -133,7 +133,20 @@ def welcome():
             print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{user_name}{Fore.RESET}{Style.RESET_ALL} is not a valid name')  # noqa
             print(f'Please use alphabetic characters only.\n')
 
-    run_story(story.intro)
+    while True:
+        show_instructions = input('\nWould you like to see how to play? (Y/N) \n').upper()  # noqa
+        if show_instructions == 'N':
+            clear()
+            run_story(story.intro)
+            break
+        elif show_instructions == 'Y':
+            how_to_play()
+            break
+        else:
+            clear()
+            # Handles invalid input by the user
+            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{show_instructions}{Fore.RESET}{Style.RESET_ALL} is an invalid input.')  # noqa
+            print('Please enter Y or N to continue.\n')
 
     while True:
         # Loop to ask user if they would like to play
