@@ -134,7 +134,9 @@ def welcome():
             print(f'Please use alphabetic characters only.\n')
 
     while True:
-        show_instructions = input('\nWould you like to see how to play? (Y/N) \n').upper()  # noqa
+        show_instructions = input(
+            '\nWould you like to see how to play? (Y/N) \n'
+            ).upper()
         if show_instructions == 'N':
             clear()
             run_story(story.intro)
@@ -150,7 +152,9 @@ def welcome():
 
     while True:
         # Loop to ask user if they would like to play
-        user_input = input(f'So {user_name}, do you accept the challange? (Y/N) \n').upper()  # noqa
+        user_input = input(
+            f'So {user_name}, do you accept the challange? (Y/N) \n'
+            ).upper()
         clear()
 
         if user_input == 'N':
@@ -211,7 +215,9 @@ def play(word, user_name):
         clear()
 
         if len(guess) == 1 and guess.isalpha():
-            word_completion = letter_guess(guess, word, word_completion, guessed_letters)  # noqa
+            word_completion = letter_guess(
+                guess, word, word_completion, guessed_letters
+                )
         elif len(guess) > 1 and guess.isalpha():
             word_guess(guess, word, word_completion, guessed_words)
         else:
