@@ -230,6 +230,8 @@ def play(word, user_name):
         # Displays the length of word if the user has tries left
         if TRIES > 0:
             print(f'\nThe word is {len(word)} letters long')
+        print(f'Letters guessed: {", ".join(guessed_letters)}\n')
+
 
     game_end(word, user_name)
 
