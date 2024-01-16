@@ -93,6 +93,28 @@ def select_difficulty():
     return difficulty
 
 
+def how_to_play():
+    """
+    Function to display instructions to the user,
+    and to validate user input
+    """
+    clear()
+    instructions = story.instructions
+    print(instructions)
+
+    while True:
+        lets_play = input('Are you ready to play? (Y) \n').upper()
+        if lets_play == 'Y':
+            clear()
+            run_story(story.intro)
+            break
+        else:
+            clear()
+            # Handles invalid input by the user
+            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{lets_play}{Fore.RESET}{Style.RESET_ALL} is an invalid input.')  # noqa
+            print('Please enter Y to continue.\n')
+
+
 def welcome():
     """
     Function to handle the start of the game,
