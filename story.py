@@ -30,7 +30,7 @@ The only way they will let Hank live is if you agree to take him in and teach
 him how to function As a human being! But in order to do that the villagers
 need to make sure that you are not an idiot as well! So they challenge
 you to a game of hangman... (ironic eh?), to prove your intelligence!\n
-Do you accept the challenge? Or shall you let Hank hang for his stupidity?
+Do you accept the challenge? Or shall you let Hank hang for his stupidity?\n
 Type Y to accept and save Hank!
 Type N to admit you are also an idiot, and let Hank hang!
 P.S. Admitting you are also an idiot, may result in your own hanging!
