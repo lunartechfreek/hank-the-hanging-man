@@ -1,5 +1,8 @@
 # File to store all story narratives and instructions
 
+#Import colorama to change font colour
+from colorama import Fore, Style
+
 # Game instructions
 instructions = """
 You will first select your difficulty of either easy, medium or hard.
