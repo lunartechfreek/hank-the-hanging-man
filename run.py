@@ -168,7 +168,7 @@ def play(word, user_name):
     TRIES = 6
 
     print(display_hangman(TRIES))
-    print(display_word(word_completion, guessed_letters))
+    print(' '.join(display_word(word_completion, guessed_letters)))
     print(f'\nThe word is {len(word)} letters long')
 
     while not GUESSED and TRIES > 0:
@@ -185,7 +185,7 @@ def play(word, user_name):
             print('Please guess a letter or word using only letters!')
 
         print(display_hangman(TRIES))
-        print(display_word(word_completion, guessed_letters))
+        print(' '.join(display_word(word_completion, guessed_letters)))
         # Displays the length of word if the user has tries left
         if TRIES > 0:
             print(f'\nThe word is {len(word)} letters long')
