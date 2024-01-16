@@ -1,32 +1,15 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hank The Hanging Man
 
-Welcome,
+![screenshot](documentation/preview.png)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+[Click here to view the live project](https://hank-the-hanging-man-8f469cffdce1.herokuapp.com)
 
-## Reminders
+## Introduction
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+Hank The Hanging Man is a game made for educational purposes for my third portfolio project in software development that I am studying with the [Code Institute](https://www.codeinstitute.net/). It is aimed at people who want to have fun, test their knowledge, and also train their brain.
 
-## Creating the Heroku app
+The project is generally a game of hangman but to make the game more interesting and appealing than the typical game of hangman people are used to playing, I added a story narrative to enhance the users experience. While designing this game I wanted my target audience to be users of all levels of intelligence so I added three different difficulty levels so that every user could have an enjoyable experience without finding the game either too challenging, or too easy. I wanted to also create a game that the user would want to return to, and play again so I designed it in a way that some of the statements would change every time the game is played to avoid repetition. 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+I have applied the the technologies I have learnt so far in python to create my game. Other technologies used are listed in the technologies used section further down the page.
 
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+## UX
