@@ -284,7 +284,7 @@ def replay():
 def display_hangman(tries):
     """
     Function to display hangman phases.
-    Also removes indent from hangman graphic.    
+    Also removes indent from hangman graphic.
     """
     phases = [
         # Phase 7, game over when tries = 0
