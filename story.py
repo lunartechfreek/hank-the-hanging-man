@@ -1,4 +1,20 @@
-# File to store all story narratives
+# File to store all story narratives and instructions
+
+# Game instructions
+instructions = """
+You will first select your difficulty of either easy, medium or hard.
+Then you will be presented with an image of a empty noose and
+blank lines representing a random word. It is your job to guess the word.
+You can guess either a letter or the whole word on each turn but you
+will only have six guesses before you lose the game.
+Each time you guess a letter correctly it will replace one of the blank
+lines and display that letters position in the hidden word.
+At any point you can try to guess the entire word.
+If guessed correctly it means you win the game!
+But with every incorrect guess a new body part will appear on the empty noose.
+There are six body parts to be added in total.
+If you end up with the entire body on the noose you lose the game!)
+"""
 
 # Intoduction narrative
 intro = """
