@@ -208,6 +208,7 @@ def letter_guess(guess, word, word_completion, guessed_letters):
     elif guess not in word:
         print(f'\nOhh dear... {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL}, is not in the word')  # noqa
         TRIES -= 1
+        run_hangman_story(TRIES)
         guessed_letters.append(guess)
     else:
         print(f'\nWell done! {Fore.GREEN}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL} is in the word!')  # noqa
@@ -234,6 +235,7 @@ def word_guess(guess, word, word_completion, guessed_words):
     elif guess != word:
         print(f'\nOhh dear... {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL}, is not the word')  # noqa
         TRIES -= 1
+        run_hangman_story(TRIES)
         guessed_words.append(guess)
     else:
         GUESSED = True
