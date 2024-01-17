@@ -14,25 +14,53 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | story.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/lunartechfreek/hank-the-hanging-man/main/story.py) | ![Story screenshot](documentation/TESTING-files/validation/validation-story-fixed.png) | ![Story errors screenshot](documentation/TESTING-files/validation/validation-story-errors.png) | Passed: Fixed all errors |
 | words.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/lunartechfreek/hank-the-hanging-man/main/words.py) | ![Words screenshot](documentation/TESTING-files/validation/validation-words-fixed.png) | ![Words errors screenshot](documentation/TESTING-files/validation/validation-words-errors.png) | Passed: Fixed all errors |
 
-## Browser Compatibility
+## Manual Testing 
 
-I've tested my deployed project on multiple browsers to check for compatibility issues.
+### Browser Compatibility
 
-### Desktop
+I've tested my deployed project on multiple browsers to check for compatibility issues. To make this as thorough as possible I tested the browsers on a variety of operating systems and devices.
 
-| Operating System | Browser | Screenshot | Notes |
-| --- | --- | --- | --- |
-| x | x | ![screenshot]() | x |
+As well as testing on real world devices I wanted to test on other devices that I could not access. For this i used [BrowserStack](https://www.browserstack.com/).
 
-### Mobile
+#### Desktop
 
 | Operating System | Browser | Screenshot | Notes |
 | --- | --- | --- | --- |
-| x | x | ![screenshot]() | x |
+| macOS | Chrome | ![Mac chrome screenshot](documentation/TESTING-files/browser-testing/testing-mac-chrome.png) | No issues encountered |
+| macOS | Edge | ![Mac edge screenshot](documentation/TESTING-files/browser-testing/testing-mac-edge.png) | No issues encountered |
+| macOS | Firefox | ![Mac firefox screenshot](documentation/TESTING-files/browser-testing/testing-mac-firefox-error.png) | Bug: When displaying an emoji, it splits it in half |
+| macOS | Opera | ![Mac opera screenshot](documentation/TESTING-files/browser-testing/testing-mac-opera.png) | No issues encountered |
+| macOS | Safari | ![Mac safari screenshot](documentation/TESTING-files/browser-testing/testing-mac-safari-error.png) | Bug: Can not type in terminal |
+| Windows 11 | Chrome | ![Windows chrome screenshot](documentation/TESTING-files/browser-testing/testing-windows-chrome.png) | No issues encountered |
+| Windows 11 | Edge | ![Windows edge screenshot](documentation/TESTING-files/browser-testing/testing-windows-edge.png) | No issues encountered |
+| Windows 11 | Firefox | ![Windows firefox screenshot](documentation/TESTING-files/browser-testing/testing-windows-firefox-error.png) | Bug: When displaying an emoji, it splits it in half |
+| Windows 11 | Opera | ![Windows opera screenshot](documentation/TESTING-files/browser-testing/testing-windows-opera-.png) | No issues encountered |
+| Windows 11 | Safari | ![Windows safari screenshot](documentation/TESTING-files/browser-testing/testing-windows-safari-error.png) | Can not show page. Very old browser version 5.1 |
+| Windows 11 | Yandex | ![Windows yandex screenshot](documentation/TESTING-files/browser-testing/testing-windows-yandex-error.png) | Bug: Emoji not displaying |
 
-### Tablet
 
-| Operating System | Browser | Screenshot | Notes |
+#### Mobile
+
+With the application being deployed on [Heroku](https://www.heroku.com/) in a terminal designed by the [Code Institute](https://www.codeinstitute.net/) there are some issues with how the game is displayed on mobile screens. For the purpose of this table I have disregarded these issues and focused on how the game itself behaves on different devices and different browsers.
+
+| Device | Browser | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Samsung Galaxy s23 | Chrome | ![Galaxy chrome screenshot](documentation/TESTING-files/browser-testing/testing-mobile-galaxy-s23-chrome.png) | No issues encountered |
+| Iphone 14 Pro | Safari | ![Iphone safari screenshot](documentation/TESTING-files/browser-testing/testing-mobile-iphone14-pro-safari-error.png) | Bug: Not able to type so not able to play game |
+| Iphone 15 plus | Chrome | ![Iphone chrome screenshot](documentation/TESTING-files/browser-testing/testing-mobile-iphone15-plus-chrome-error.png) | Bug: Input not displaying so not able to play game |
+| Oneplus 11R | Chrome | ![Oneplus chrome screenshot](documentation/TESTING-files/browser-testing/testing-mobile-oneplus-11r-chrome.png) | No issues encountered |
+| Google Pixel 8 | Edge | ![Pixel edge screenshot](documentation/TESTING-files/browser-testing/testing-mobile-pixel8-pro-edge.png) | No issues encountered |
+
+
+#### Tablet
+
+| Device | Browser | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Samsung Galaxy Tab 9 | Chrome | ![Galaxy tab chrome screenshot](documentation/TESTING-files/browser-testing/testing-tablet-galaxy-tab-s9-chrome.png) | No issues encountered |
+| Samsung Galaxy Tab 9 | Edge | ![Galaxy tab edge screenshot](documentation/TESTING-files/browser-testing/testing-tablet-galaxy-tab-s9-edge.png) | No issues encountered |
+| Ipad 10th Gen | Chrome | ![Ipad chrome screenshot](documentation/TESTING-files/browser-testing/testing-tablet-ipad-chrome-error.png) | Bug: Unable to type, not able to play game |
+| Ipad 10th Gen | Safari | ![Ipad safari screenshot](documentation/TESTING-files/browser-testing/testing-tablet-ipad-safari-error.png) | Bug: When displaying an emoji, it splits it in half |
+
 | --- | --- | --- | --- |
 | x | x | ![screenshot]() | x |
 
