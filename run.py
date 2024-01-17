@@ -217,7 +217,7 @@ def play(word, user_name):
         if len(guess) == 1 and guess.isalpha():
             word_completion = letter_guess(
                 guess, word, word_completion, guessed_letters
-                )
+            )
         elif len(guess) > 1 and guess.isalpha():
             word_guess(guess, word, word_completion, guessed_words)
         else:
