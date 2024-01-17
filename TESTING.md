@@ -61,6 +61,24 @@ With the application being deployed on [Heroku](https://www.heroku.com/) in a te
 | Ipad 10th Gen | Chrome | ![Ipad chrome screenshot](documentation/TESTING-files/browser-testing/testing-tablet-ipad-chrome-error.png) | Bug: Unable to type, not able to play game |
 | Ipad 10th Gen | Safari | ![Ipad safari screenshot](documentation/TESTING-files/browser-testing/testing-tablet-ipad-safari-error.png) | Bug: When displaying an emoji, it splits it in half |
 
+### Responsiveness
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Test Type | Screenshot | Notes |
 | --- | --- | --- | --- |
-| x | x | ![screenshot]() | x |
+| Macbook Pro | Physical | ![Macbook Pro screenshot](documentation/TESTING-files/responsiveness-testing/responsiveness-macbook-pro.png) | No issues |
+| Iphone 15 ProMax | Physical | ![Iphone 15 ProMax screenshot]() |  |
+| Iphone 14 Plus | Physical | ![Iphone 14 Plus screenshot]() |  |
+|  |  | ![screenshot]() |  |
+| Desktop | Virtual | ![Desktop screenshot](documentation/TESTING-files/browser-testing/testing-windows-edge.png) | No issues |
+| Galaxy S23 | Virtual | ![Galaxy S23 screenshot](documentation/TESTING-files/browser-testing/testing-mobile-galaxy-s23-chrome.png) | Content does not fit screen |
+| Oneplus 11R | Virtual | ![Oneplus 11R screenshot](documentation/TESTING-files/browser-testing/testing-mobile-oneplus-11r-chrome.png) | Content does not fit screen |
+| Pixel 8 | Virtual | ![Pixel 8 screenshot](documentation/TESTING-files/browser-testing/testing-mobile-pixel8-pro-edge.png) | Content does not fit screen |
+| Galaxy Tab 9 | Virtual | ![Galaxy Tab 9 screenshot](documentation/TESTING-files/browser-testing/testing-tablet-galaxy-tab-s9-chrome.png) | No issues |
+| Ipad 10th Gen | Virtual | ![Ipad 10th Gen screenshot](documentation/TESTING-files/browser-testing/testing-tablet-ipad-safari-error.png) | No issues |
+| Galaxy Fold | Devtools | ![Galaxy Fold screenshot](documentation/TESTING-files/responsiveness-testing/responsiveness-galaxy-fold.png) | Content does not fit screen |
+| Galaxy Surface Duo | Devtools | ![Galaxy Surface Duo screenshot](documentation/TESTING-files/responsiveness-testing/responsiveness-surface-duo.png) | Content does not fit screen |
+| Galaxy Surface Pro | Devtools | ![Galaxy Surface Pro screenshot](documentation/TESTING-files/responsiveness-testing/responsiveness-surface-pro-7.png) | Content does not fit screen |
+
 
