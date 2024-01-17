@@ -1,6 +1,6 @@
 # File to store all story narratives and instructions
 
-#Import colorama to change font colour
+# Import colorama to change font colour
 from colorama import Fore, Style
 
 # Game instructions
@@ -37,15 +37,15 @@ P.S. Admitting you are also an idiot, may result in your own hanging!
 """
 
 # Narrative for easy difficulty
-easy = f"""
-{Fore.GREEN}{Style.BRIGHT}Oh so you chose easy eh? 🤨{Fore.RESET}{Style.RESET_ALL}\n
+easy = f"""{Fore.GREEN}{Style.BRIGHT}
+Oh so you chose easy eh? 🤨{Fore.RESET}{Style.RESET_ALL}\n
 Hank thought that you were the smart one, but now he's not sure...
 he starts sweating as they put the noose around his neck!
 """
 
 # Narrative for medium difficulty
-medium = f"""
-{Fore.CYAN}{Style.BRIGHT}Ok, so you have chosen medium 🙂{Fore.RESET}{Style.RESET_ALL}\n
+medium = f"""{Fore.CYAN}{Style.BRIGHT}
+Ok, so you have chosen medium 🙂{Fore.RESET}{Style.RESET_ALL}\n
 Hank is somewhat filled with confidence, but has to consider that
 you are neither confirming or denying your intelligence…
 He hopes you’re not this indecisive while playing!
@@ -53,8 +53,8 @@ His life depends on it!
 """
 
 # Narrative for hard difficulty
-hard = f"""
-{Fore.RED}{Style.BRIGHT}Well look at this, you have chosen hard 🤓{Fore.RESET}{Style.RESET_ALL}\n
+hard = f"""{Fore.RED}{Style.BRIGHT}
+Well look at this, you have chosen hard 🤓{Fore.RESET}{Style.RESET_ALL}\n
 Hank is filled with the upmost confidence in you!
 But has to consider that you have just made the game that
 decides his fate even harder for yourself!
