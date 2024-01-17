@@ -1,11 +1,11 @@
 # Import modules
 import random
-import words
-import story
 import textwrap
 import os
 import colorama
 from colorama import Fore, Style
+import words
+import story
 
 # To initialize colorama and to autoreset styles
 colorama.init(autoreset=True)
