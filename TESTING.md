@@ -41,7 +41,7 @@ As well as testing on real world devices I wanted to test on other devices that 
 
 #### Mobile
 
-With the application being deployed on [Heroku](https://www.heroku.com/) in a terminal designed by the [Code Institute](https://www.codeinstitute.net/) there are some issues with how the game is displayed on mobile screens. For the purpose of this table I have disregarded these issues and focused on how the game itself behaves on different devices and different browsers.
+With the application being deployed on [Heroku](https://www.heroku.com/) in a terminal designed by the [Code Institute](https://www.codeinstitute.net/) there are some issues with how the game is displayed on mobile screens. For the purpose of this section I have disregarded these issues and focused on how the game itself behaves on different devices and different browsers.
 
 | Device | Browser | Screenshot | Notes |
 | --- | --- | --- | --- |
