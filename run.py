@@ -119,7 +119,7 @@ def how_to_play():
     print(instructions)
 
     while True:
-        lets_play = input('Are you ready to play? (Y) \n').upper()
+        lets_play = input('Type Y to continue \n').upper()
         if lets_play == 'Y':
             clear()
             run_story(story.intro)
