@@ -65,30 +65,39 @@ Hanks life depends on it!
 # Different narratives to be printed for certain points in game
 # Narratives for hangman phase 3
 phase_three = [
-    "Hank is starting to worry now!",
-    "Hank wishes he had a smarter best friend!",
-    "Hank asks if he can pick someone else to play!",
-    "Hank is starting to sweat a little!",
-    "Hank wishes you had listened more in school!",
-    "Hank says that you can do better than this!",
-    "Hank would like you to think a bit more before answering!",
-    "Hank says he wishes you could swap because even he could do better!"
+    "\nHank is starting to worry now!",
+    "\nHank wishes he had a smarter best friend!",
+    "\nHank asks if he can pick someone else to play!",
+    "\nHank is starting to sweat a little!",
+    "\nHank wishes you had listened more in school!",
+    "\nHank says that you can do better than this!",
+    "\nHank would like you to think a bit more before answering!",
+    "\nHank says he wishes you could swap because even he could do better!"
 ]
 
 # Narratives for hangman phase five
 phase_five = [
-    "Hank thinks that you should have chose an easier difficulty!",
-    "Hank is dripping with sweat now!",
-    "Hank is starting to lose hope!",
-    "Hank wants to remind you his life is on the line!",
-    "Hank says that your the true village idiot and not him!",
-    "Hank says that your stupidity will be the death of him!",
-    "Hank can't believe what a poor effort your giving!",
-    "Hank would like to swap you for the town pig!"
+    "\nHank thinks that you should have chose an easier difficulty!",
+    "\nHank is dripping with sweat now!",
+    "\nHank is starting to lose hope!",
+    "\nHank wants to remind you his life is on the line!",
+    "\nHank says that your the true village idiot and not him!",
+    "\nHank says that your stupidity will be the death of him!",
+    "\nHank can't believe what a poor effort your giving!",
+    "\nHank would like to swap you for the town pig!"
 ]
 
 # Narratives for hangman phase six
 phase_six = [
+    "\n'It looks like this is the end!' cries Hank!",
+    "\n'Im giving up hope' Hank cries",
+    "\n'It was fun while it lasted' Hank thinks to himself",
+    "\n'Can you do no better!?' Hank screams",
+    "\n'One more and im gone!' screams Hank",
+    "\n'Are you trying to let me hang!?' cries Hank",
+    "\n'What did I do to deserve such a stupid friend' wonders Hank",
+    "\n'Please think carefully about this last one!' shouts Hank"
+]
 
 # Narratives for hangman phase seven
 phase_seven = [
