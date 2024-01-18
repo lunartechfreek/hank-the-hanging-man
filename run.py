@@ -159,7 +159,6 @@ def welcome():
             print(f'Please use alphabetic characters only.\n')
 
     while True:
-        clear()
         show_instructions = input(
             '\nWould you like to see how to play? (Y/N) \n'
             ).upper()
