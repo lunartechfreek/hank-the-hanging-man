@@ -514,9 +514,7 @@ def main():
 
 
 if __name__ == "__main__":
-    """
-    Executes the code, clears the terminal,
-    and starts the application.
-    """
+    # Executes the code, clears the terminal
+    # Starts the application
     clear()
     main()
