@@ -24,20 +24,14 @@ As well as testing on real world devices I wanted to test on other devices that 
 
 #### Desktop
 
-| Operating System | Browser | Screenshot | Notes |
+| Browser | macOS | Windows 11 | Notes |
 | --- | --- | --- | --- |
-| macOS | Chrome | ![Mac chrome screenshot](documentation/testing-files/browser-testing/testing-mac-chrome.png) | No issues encountered |
-| macOS | Edge | ![Mac edge screenshot](documentation/testing-files/browser-testing/testing-mac-edge.png) | No issues encountered |
-| macOS | Firefox | ![Mac firefox screenshot](documentation/testing-files/browser-testing/testing-mac-firefox-error.png) | Bug: When displaying an emoji, it splits it in half |
-| macOS | Opera | ![Mac opera screenshot](documentation/testing-files/browser-testing/testing-mac-opera.png) | No issues encountered |
-| macOS | Safari | ![Mac safari screenshot](documentation/testing-files/browser-testing/testing-mac-safari-error.png) | Bug: Can not type in terminal |
-| Windows 11 | Chrome | ![Windows chrome screenshot](documentation/testing-files/browser-testing/testing-windows-chrome.png) | No issues encountered |
-| Windows 11 | Edge | ![Windows edge screenshot](documentation/testing-files/browser-testing/testing-windows-edge.png) | No issues encountered |
-| Windows 11 | Firefox | ![Windows firefox screenshot](documentation/testing-files/browser-testing/testing-windows-firefox-error.png) | Bug: When displaying an emoji, it splits it in half |
-| Windows 11 | Opera | ![Windows opera screenshot](documentation/testing-files/browser-testing/testing-windows-opera-.png) | No issues encountered |
-| Windows 11 | Safari | ![Windows safari screenshot](documentation/testing-files/browser-testing/testing-windows-safari-error.png) | Can not show page. Very old browser version 5.1 |
-| Windows 11 | Yandex | ![Windows yandex screenshot](documentation/testing-files/browser-testing/testing-windows-yandex-error.png) | Bug: Emoji not displaying |
-
+| Chrome | ![Mac chrome screenshot](documentation/testing-files/browser-testing/testing-mac-chrome.png) | ![Windows chrome screenshot](documentation/testing-files/browser-testing/testing-windows-chrome.png) | No issues encountered |
+| Edge | ![Mac edge screenshot](documentation/testing-files/browser-testing/testing-mac-edge.png) | ![Windows edge screenshot](documentation/testing-files/browser-testing/testing-windows-edge.png) | No issues encountered |
+| Firefox | ![Mac firefox screenshot](documentation/testing-files/browser-testing/testing-mac-firefox-error.png) | ![Windows firefox screenshot](documentation/testing-files/browser-testing/testing-windows-firefox-error.png) | Bug: When displaying an emoji, it splits it in half |
+| Opera | ![Mac opera screenshot](documentation/testing-files/browser-testing/testing-mac-opera.png) | ![Windows opera screenshot](documentation/testing-files/browser-testing/testing-windows-opera-.png) | No issues encountered |
+| Safari | ![Mac safari screenshot](documentation/testing-files/browser-testing/testing-mac-safari-error.png) | ![Windows safari screenshot](documentation/testing-files/browser-testing/testing-windows-safari-error.png) | macOS: Can not type in terminal. Windows11: Can not show page (very old browser v5.1) |
+| Yandex | N/A | ![Windows yandex screenshot](documentation/testing-files/browser-testing/testing-windows-yandex-error.png) | Bug: Emoji not displaying |
 
 #### Mobile
 
