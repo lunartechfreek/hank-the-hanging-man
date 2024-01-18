@@ -147,6 +147,7 @@ def welcome():
     while True:
         user_name = input('Please enter your name: \n').capitalize()
         if user_name.isalpha():
+            clear()
             break
         else:
             # Handles invalid input by the user
