@@ -502,3 +502,12 @@ def main():
 
 
 main()
+
+
+if __name__ == "__main__":
+    """
+    Executes the code, clears the terminal,
+    and starts the application.
+    """
+    clear()
+    main()
