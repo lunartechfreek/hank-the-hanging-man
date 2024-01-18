@@ -89,12 +89,16 @@ phase_five = [
 
 # Narratives for hangman phase six
 phase_six = [
-    "'It looks like this is the end!' cries Hank!",
-    "'Im giving up hope' Hank cries",
-    "'It was fun while it lasted' Hank thinks to himself",
-    "'Can you do no better!?' Hank screams",
-    "'One more and im gone!' screams Hank",
-    "'Are you trying to let me hang!?' cries Hank",
-    "'What did I do to deserve such a stupid friend' wonders Hank",
-    "'Please think carefully about this last one!' shouts Hank"
+
+# Narratives for hangman phase seven
+phase_seven = [
+    "\nCongratulations you've killed Hank, I hope you can live with yourself!",
+    "\nHank trusted you, and now he is dead!",
+    "\nSome friend you are, you have killed Hank!",
+    "\nHank thought you were the smart one!",
+    "\nHank is speechless... Because you killed him!",
+    "\nRIP Hank - The smart friend",
+    "\nHere lies Hank, who was killed by the new village idiot",
+    "\nI'd get running if I was you... They don't like idiots remember!",
+    "\nLooks like the they are preparing a noose for the new village idiot!"
 ]
