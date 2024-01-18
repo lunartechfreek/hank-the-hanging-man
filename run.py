@@ -87,7 +87,11 @@ def select_difficulty():
             break
         else:
             # Handles invalid input by the user
-            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{user_input}{Fore.RESET}{Style.RESET_ALL} is not a valid input.')  # noqa
+            print(
+                '\nSorry, '
+                f'{Fore.RED}{Style.BRIGHT}{user_input}'
+                f'{Fore.RESET}{Style.RESET_ALL} is not a valid input.'
+            )
             print('Please enter the letter E, M, or H\n')
 
     return difficulty
@@ -111,7 +115,11 @@ def how_to_play():
         else:
             clear()
             # Handles invalid input by the user
-            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{lets_play}{Fore.RESET}{Style.RESET_ALL} is an invalid input.')  # noqa
+            print(
+                '\nSorry, '
+                f'{Fore.RED}{Style.BRIGHT}{lets_play}'
+                f'{Fore.RESET}{Style.RESET_ALL} is an invalid input.'
+            )
             print('Please enter Y to continue.\n')
 
 
@@ -130,7 +138,12 @@ def welcome():
             break
         else:
             # Handles invalid input by the user
-            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{user_name}{Fore.RESET}{Style.RESET_ALL} is not a valid name')  # noqa
+            clear()
+            print(
+                '\nSorry, '
+                f'{Fore.RED}{Style.BRIGHT}{user_name}'
+                f'{Fore.RESET}{Style.RESET_ALL} is not a valid name'
+            )
             print(f'Please use alphabetic characters only.\n')
 
     while True:
@@ -147,7 +160,11 @@ def welcome():
         else:
             clear()
             # Handles invalid input by the user
-            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{show_instructions}{Fore.RESET}{Style.RESET_ALL} is an invalid input.')  # noqa
+            print(
+                '\nSorry, '
+                f'{Fore.RED}{Style.BRIGHT}{show_instructions}'
+                f'{Fore.RESET}{Style.RESET_ALL} is an invalid input.'
+            )
             print('Please enter Y or N to continue.\n')
 
     while True:
@@ -166,7 +183,11 @@ def welcome():
             break
         else:
             # Handles invalid input by the user
-            print(f'\nSorry, {Fore.RED}{Style.BRIGHT}{user_input}{Fore.RESET}{Style.RESET_ALL} is an invalid input.')  # noqa
+            print(
+                '\nSorry, '
+                f'{Fore.RED}{Style.BRIGHT}{user_input}'
+                f'{Fore.RESET}{Style.RESET_ALL} is an invalid input.'
+            )
             print('Please enter Y or N.\n')
 
     return difficulty, user_name
@@ -222,7 +243,11 @@ def play(word, user_name):
             word_guess(guess, word, word_completion, guessed_words)
         else:
             # Handles invalid input by the user
-            print(f'\nOh no! {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL} is not a valid guess!')  # noqa
+            print(
+                '\nOh no! '
+                f'{Fore.RED}{Style.BRIGHT}{guess}'
+                f'{Fore.RESET}{Style.RESET_ALL} is not a valid guess!'
+            )
             print('Please guess a letter or word using only letters!')
 
         print(display_hangman(TRIES))
@@ -231,7 +256,6 @@ def play(word, user_name):
         if TRIES > 0:
             print(f'\nThe word is {len(word)} letters long')
         print(f'Letters guessed: {", ".join(guessed_letters)}\n')
-
 
     game_end(word, user_name)
 
@@ -249,12 +273,20 @@ def letter_guess(guess, word, word_completion, guessed_letters):
         # Handles duplicate inputs by the user
         print(f'\nYou already guessed the letter {guess}, silly!')
     elif guess not in word:
-        print(f'\nOhh dear... {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL}, is not in the word')  # noqa
+        print(
+            '\nOhh dear... '
+            f'{Fore.RED}{Style.BRIGHT}{guess}'
+            f'{Fore.RESET}{Style.RESET_ALL}, is not in the word'
+        )
         TRIES -= 1
         run_hangman_story(TRIES)
         guessed_letters.append(guess)
     else:
-        print(f'\nWell done! {Fore.GREEN}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL} is in the word!')  # noqa
+        print(
+            '\nWell done! '
+            f'{Fore.GREEN}{Style.BRIGHT}{guess}'
+            f'{Fore.RESET}{Style.RESET_ALL} is in the word!'
+        )
         guessed_letters.append(guess)
         word_completion = update_word(word, guess, word_completion)
         if '_' not in word_completion:
@@ -276,7 +308,11 @@ def word_guess(guess, word, word_completion, guessed_words):
         # Handles duplicate inputs by the user
         print(f'\nYou already guessed the word {guess}, silly!')
     elif guess != word:
-        print(f'\nOhh dear... {Fore.RED}{Style.BRIGHT}{guess}{Fore.RESET}{Style.RESET_ALL}, is not the word')  # noqa
+        print(
+            '\nOhh dear... '
+            f'{Fore.RED}{Style.BRIGHT}{guess}'
+            f'{Fore.RESET}{Style.RESET_ALL}, is not the word'
+        )
         TRIES -= 1
         run_hangman_story(TRIES)
         guessed_words.append(guess)
@@ -291,7 +327,7 @@ def update_word(word, guess, word_completion):
     replaces the underscores with the letter
     if the letter is correct.
     Code borrowed from Youtube tutorial:
-    https://www.youtube.com/watch?v=m4nEnsavl6w&list=PLVVxU9zkt8071XW8qgYXv_62rgO-HwRal&index=5&t=491s
+    https://www.youtube.com/watch?v=m4nEnsavl6w
     """
     word_as_list = list(word_completion)
     indices = [i for i, letter in enumerate(word) if letter == guess]
@@ -310,11 +346,24 @@ def game_end(word, user_name):
     """
     global GUESSED
     if GUESSED:
-        print(f'\n{Fore.GREEN}{Style.BRIGHT}Well done {user_name}{Fore.RESET}{Style.RESET_ALL}!')  # noqa
-        print(f'The word was {Fore.GREEN}{Style.BRIGHT}{word}{Fore.RESET}{Style.RESET_ALL}! You saved Hank!\n')  # noqa
+        print(
+            f'\n{Fore.GREEN}{Style.BRIGHT}Well done {user_name}!y'
+            f'{Fore.RESET}{Style.RESET_ALL}'
+        )
+        print(
+            'The word was '
+            f'{Fore.GREEN}{Style.BRIGHT}{word}{Fore.RESET}{Style.RESET_ALL}! '
+            f'You saved Hank!\n'
+        )
     else:
-        print(f'\n{Fore.RED}{Style.BRIGHT}Sorry {user_name}{Fore.RESET}{Style.RESET_ALL}')  # noqa
-        print(f'You ran out of tries, the word was {Fore.GREEN}{Style.BRIGHT}{word}{Fore.RESET}{Style.RESET_ALL}\n')  # noqa
+        print(
+            f'\n{Fore.RED}{Style.BRIGHT}Sorry {user_name}'
+            f'{Fore.RESET}{Style.RESET_ALL}'
+        )
+        print(
+            'You ran out of tries, the word was '
+            f'{Fore.GREEN}{Style.BRIGHT}{word}{Fore.RESET}{Style.RESET_ALL}\n'
+        )
 
 
 def replay():
@@ -336,7 +385,10 @@ def replay():
             break
         else:
             # Handles invalid input by the user
-            print(f'\n{Fore.RED}{Style.BRIGHT}{user_input}{Fore.RESET}{Style.RESET_ALL} is not a valid input.')  # noqa
+            print(
+                f'\n{Fore.RED}{Style.BRIGHT}{user_input}'
+                f'{Fore.RESET}{Style.RESET_ALL} is not a valid input.'
+            )
             print('Please enter Y or N.\n')
 
     return difficulty
