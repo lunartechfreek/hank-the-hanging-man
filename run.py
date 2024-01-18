@@ -67,7 +67,10 @@ def select_difficulty():
         print('Type E for easy')
         print('Type M for medium')
         print('Type H for hard\n')
-        user_input = input('Please type E, M or H \n').upper()
+        print('Type Q if you would like to quit the game')
+        print('Click the orange "Run Program" button to restart\n')
+        user_input = input(
+            'Please type E, M or H to continue, or Q to quit \n').upper()
         clear()
 
         if user_input == 'E':
@@ -84,6 +87,12 @@ def select_difficulty():
             run_story(story.hard)
             difficulty = words.hard_words
             print("Let's save Hank!...")
+            break
+        elif user_input == 'Q':
+            clear()
+            print('Goodbye!')
+            print('Click the orange "Run Program" button above to restart\n')
+            quit()
             break
         else:
             # Handles invalid input by the user
