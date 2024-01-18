@@ -185,6 +185,7 @@ def welcome():
 
         if user_input == 'N':
             print('\nGoodbye!')
+            print('Click the orange "Run Program" button above to restart\n')
             quit()
         elif user_input == 'Y':
             print("\nGreat! Let's choose the difficulty...\n")
@@ -387,6 +388,7 @@ def replay():
 
         if user_input == 'N':
             print('\nGoodbye!')
+            print('Click the orange "Run Program" button above to restart\n')
             quit()
         elif user_input == 'Y':
             print("\nGreat! Let's choose the difficulty...\n")
@@ -508,9 +510,6 @@ def main():
         else:
             replay_word = get_word(replay_difficulty)
             play(replay_word, user_name)
-
-
-main()
 
 
 if __name__ == "__main__":
