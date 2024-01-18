@@ -145,7 +145,7 @@ def welcome():
     """
     print('\nWelcome to Hank the Hanging Man!')
     while True:
-        user_name = input('Please enter your name: \n').capitalize()
+        user_name = input('\nPlease enter your name: \n').capitalize()
         if user_name.isalpha():
             clear()
             break
@@ -178,7 +178,7 @@ def welcome():
                 f'{Fore.RED}{Style.BRIGHT}{show_instructions}'
                 f'{Fore.RESET}{Style.RESET_ALL} is an invalid input.'
             )
-            print('Please enter Y or N to continue.\n')
+            print('Please enter Y or N to continue.')
 
     while True:
         # Loop to ask user if they would like to play
