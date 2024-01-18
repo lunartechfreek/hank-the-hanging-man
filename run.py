@@ -46,15 +46,18 @@ def run_hangman_story(tries):
     Function to display random narratives to user
     at different points in gmae
     """
-    if TRIES == 4:
+    if tries == 4:
         hangman_phase_three = random.choice(story.phase_three)
         print(hangman_phase_three)
-    elif TRIES == 2:
+    elif tries == 2:
         hangman_phase_five = random.choice(story.phase_five)
         print(hangman_phase_five)
-    elif TRIES == 1:
+    elif tries == 1:
         hangman_phase_six = random.choice(story.phase_six)
         print(hangman_phase_six)
+    elif tries == 0:
+        hangman_phase_seven = random.choice(story.phase_seven)
+        print(hangman_phase_seven)
 
 
 def select_difficulty():
