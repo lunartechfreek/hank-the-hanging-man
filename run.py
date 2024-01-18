@@ -140,7 +140,7 @@ def welcome():
     selected by the user in the select_difficulty
     function
     """
-    print('Welcome to Hank the Hanging Man!')
+    print('\nWelcome to Hank the Hanging Man!')
     while True:
         user_name = input('Please enter your name: \n').capitalize()
         if user_name.isalpha():
@@ -156,6 +156,7 @@ def welcome():
             print(f'Please use alphabetic characters only.\n')
 
     while True:
+        clear()
         show_instructions = input(
             '\nWould you like to see how to play? (Y/N) \n'
             ).upper()
