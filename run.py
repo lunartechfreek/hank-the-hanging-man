@@ -224,6 +224,24 @@ def welcome():
         elif show_instructions == 'Y':
             how_to_play()
             break
+        elif show_instructions == '':
+            # Handles enter button input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Enter{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid input')
+            print('Please enter Y or N to continue.')
+        elif show_instructions == ' ':
+            # Handles spacebar input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid input')
+            print('Please enter Y or N to continue.')
         else:
             clear()
             # Handles invalid input by the user
@@ -249,6 +267,24 @@ def welcome():
             print("\nGreat! Let's choose the difficulty...\n")
             difficulty = select_difficulty()
             break
+        elif user_input == '':
+            # Handles enter button input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Enter{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid input')
+            print('Please enter Y or N to continue.')
+        elif user_input == ' ':
+            # Handles spacebar input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid input')
+            print('Please enter Y or N to continue.')
         else:
             # Handles invalid input by the user
             print(
@@ -256,7 +292,7 @@ def welcome():
                 f'{Fore.RED}{Style.BRIGHT}{user_input}'
                 f'{Fore.RESET}{Style.RESET_ALL} is an invalid input.'
             )
-            print('Please enter Y or N.\n')
+            print('Please enter Y or N to continue.\n')
 
     return difficulty, user_name
 
