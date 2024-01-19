@@ -122,7 +122,7 @@ def select_difficulty():
                 f'{Fore.RED}{Style.BRIGHT}{user_input}'
                 f'{Fore.RESET}{Style.RESET_ALL} is not a valid input.'
             )
-            print('Please enter the letter E, M, or H\n')
+            print('Please enter the letter E, M, H or Q\n')
 
     return difficulty
 
