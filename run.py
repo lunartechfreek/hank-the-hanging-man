@@ -315,7 +315,7 @@ def display_word(word, letters_guessed):
     return displayed_word
 
 
-def play(word, user_name):
+def play(word, user_name, difficulty):
     """
     Main function to play the game.
     Has an input to take the guess from the user
@@ -344,7 +344,7 @@ def play(word, user_name):
                 guess, word, word_completion, guessed_letters
             )
         elif len(guess) > 1 and guess.isalpha():
-            word_guess(guess, word, word_completion, guessed_words)
+            word_guess(guess, word, word_completion, guessed_words, difficulty)
         elif guess == '':
             # Handles enter button input by the user
             clear()
@@ -418,7 +418,7 @@ def letter_guess(guess, word, word_completion, guessed_letters):
     return word_completion
 
 
-def word_guess(guess, word, word_completion, guessed_words):
+def word_guess(guess, word, word_completion, guessed_words, difficulty):
     """
     Function to handle when the user guesses a word.
     Checks for duplicate inputs.
@@ -427,9 +427,20 @@ def word_guess(guess, word, word_completion, guessed_words):
     """
     global TRIES
     global GUESSED
+
     if guess in guessed_words:
         # Handles duplicate inputs by the user
         print(f'\nYou already guessed the word {guess}, silly!')
+    # Checks if user is playing easy difficulty and guess is incorrect length
+    elif len(guess) != len(word) and difficulty == words.easy_words:
+        clear()
+        print(
+            f'\nSorry, you guessed a {Fore.RED}{Style.BRIGHT}'
+            f'{len(guess)}{Fore.RESET}{Style.RESET_ALL} letter word'
+        )
+        print(
+            f'The word is {len(word)} letters long!'
+        )
     elif guess != word:
         print(
             '\nOhh dear... '
@@ -631,7 +642,7 @@ def main():
     """
     selected_difficulty, user_name = welcome()
     word = get_word(selected_difficulty)
-    play(word, user_name)
+    play(word, user_name, selected_difficulty)
 
     # Loop to ask the user if they want to play again
     while True:
@@ -640,7 +651,7 @@ def main():
             break
         else:
             replay_word = get_word(replay_difficulty)
-            play(replay_word, user_name)
+            play(replay_word, user_name, replay_difficulty)
 
 
 if __name__ == "__main__":
