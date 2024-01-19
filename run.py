@@ -507,6 +507,24 @@ def replay():
             print("\nGreat! Let's choose the difficulty...\n")
             difficulty = select_difficulty()
             break
+        elif user_input == '':
+            # Handles enter button input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Enter{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid input')
+            print('Please enter Y or N to continue.\n')
+        elif user_input == ' ':
+            # Handles spacebar input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid input')
+            print('Please enter Y or N to continue.\n')
         else:
             # Handles invalid input by the user
             print(
