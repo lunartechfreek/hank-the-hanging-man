@@ -142,6 +142,24 @@ def how_to_play():
             clear()
             run_story(story.intro)
             break
+        elif lets_play == '':
+            # Handles enter button input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Enter{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid input')
+            print('Please enter Y to continue.\n')
+        elif lets_play == ' ':
+            # Handles spacebar input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid input')
+            print('Please enter Y to continue.\n')
         else:
             clear()
             # Handles invalid input by the user
