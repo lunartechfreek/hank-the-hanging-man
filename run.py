@@ -345,6 +345,25 @@ def play(word, user_name):
             )
         elif len(guess) > 1 and guess.isalpha():
             word_guess(guess, word, word_completion, guessed_words)
+        elif guess == '':
+            # Handles enter button input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Enter{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid guess')
+            print('Please guess a letter or word using only letters!')
+        elif ' ' in guess:
+            # Handles spacebar input by the user
+            clear()
+            print(
+                '\nSorry, your guess contained a space '
+                f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid guess')
+            print('The correct answer is one word and contains no spaces')
+            print('Please guess a letter or word using only letters!')
         else:
             # Handles invalid input by the user
             print(
