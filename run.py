@@ -93,7 +93,7 @@ def select_difficulty():
             break
         elif user_input == 'Q':
             clear()
-            print('Goodbye!')
+            print('\nGoodbye!\n')
             print('Click the orange "Run Program" button above to restart\n')
             quit()
             break
@@ -260,7 +260,7 @@ def welcome():
         clear()
 
         if user_input == 'N':
-            print('\nGoodbye!')
+            print('\nGoodbye!\n')
             print('Click the orange "Run Program" button above to restart\n')
             quit()
         elif user_input == 'Y':
@@ -500,7 +500,7 @@ def replay():
         clear()
 
         if user_input == 'N':
-            print('\nGoodbye!')
+            print('\nGoodbye!\n')
             print('Click the orange "Run Program" button above to restart\n')
             quit()
         elif user_input == 'Y':
@@ -636,7 +636,6 @@ def main():
     while True:
         replay_difficulty = replay()
         if replay_difficulty is None:
-            print('Thanks for playing! Goodbye!')
             break
         else:
             replay_word = get_word(replay_difficulty)
