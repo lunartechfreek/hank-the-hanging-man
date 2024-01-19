@@ -528,7 +528,8 @@ def replay():
         else:
             # Handles invalid input by the user
             print(
-                f'\n{Fore.RED}{Style.BRIGHT}{user_input}'
+                '\nSorry, '
+                f'{Fore.RED}{Style.BRIGHT}{user_input}'
                 f'{Fore.RESET}{Style.RESET_ALL} is not a valid input.'
             )
             print('Please enter Y or N.\n')
