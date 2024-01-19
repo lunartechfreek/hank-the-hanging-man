@@ -470,7 +470,7 @@ def game_end(word, user_name):
     global GUESSED
     if GUESSED:
         print(
-            f'\n{Fore.GREEN}{Style.BRIGHT}Well done {user_name}!y'
+            f'\n{Fore.GREEN}{Style.BRIGHT}Well done {user_name}!'
             f'{Fore.RESET}{Style.RESET_ALL}'
         )
         print(
