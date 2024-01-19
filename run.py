@@ -185,6 +185,24 @@ def welcome():
         if user_name.isalpha():
             clear()
             break
+        elif user_name == '':
+            # Handles enter button input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Enter{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid name')
+            print(f'Please use alphabetic characters only.\n')
+        elif user_name == ' ':
+            # Handles spacebar input by the user
+            clear()
+            print(
+                '\nSorry, you pressed '
+                f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
+            )
+            print('That is not a valid name')
+            print(f'Please use alphabetic characters only.\n')
         else:
             # Handles invalid input by the user
             clear()
