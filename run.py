@@ -106,11 +106,11 @@ def select_difficulty():
             )
             print('That is not a valid input')
             print('Please enter the letter E, M, H or Q\n')
-        elif user_input == ' ':
+        elif ' ' in user_input:
             # Handles spacebar input by the user
             clear()
             print(
-                '\nSorry, you pressed '
+                '\nSorry, your input contains a '
                 f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
             )
             print('That is not a valid input')
@@ -151,11 +151,11 @@ def how_to_play():
             )
             print('That is not a valid input')
             print('Please enter Y to continue.\n')
-        elif lets_play == ' ':
+        elif ' ' in lets_play:
             # Handles spacebar input by the user
             clear()
             print(
-                '\nSorry, you pressed '
+                '\nSorry, your input contains a '
                 f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
             )
             print('That is not a valid input')
@@ -179,9 +179,9 @@ def welcome():
     selected by the user in the select_difficulty
     function
     """
-    print('\nWelcome to Hank the Hanging Man!')
+    print('\nWelcome to Hank the Hanging Man!\n')
     while True:
-        user_name = input('\nPlease enter your name: \n').capitalize()
+        user_name = input('Please enter your name: \n').capitalize()
         if user_name.isalpha():
             clear()
             break
@@ -194,11 +194,11 @@ def welcome():
             )
             print('That is not a valid name')
             print(f'Please use alphabetic characters only.\n')
-        elif user_name == ' ':
+        elif ' ' in user_name:
             # Handles spacebar input by the user
             clear()
             print(
-                '\nSorry, you pressed '
+                '\nSorry, your input contains a '
                 f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
             )
             print('That is not a valid name')
@@ -233,11 +233,11 @@ def welcome():
             )
             print('That is not a valid input')
             print('Please enter Y or N to continue.')
-        elif show_instructions == ' ':
+        elif ' ' in show_instructions:
             # Handles spacebar input by the user
             clear()
             print(
-                '\nSorry, you pressed '
+                '\nSorry, your input contains a '
                 f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
             )
             print('That is not a valid input')
@@ -275,16 +275,16 @@ def welcome():
                 f'{Fore.RED}{Style.BRIGHT}Enter{Fore.RESET}{Style.RESET_ALL}'
             )
             print('That is not a valid input')
-            print('Please enter Y or N to continue.')
-        elif user_input == ' ':
+            print('Please enter Y or N to continue.\n')
+        elif ' ' in user_input:
             # Handles spacebar input by the user
             clear()
             print(
-                '\nSorry, you pressed '
+                '\nSorry, your input contains a '
                 f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
             )
             print('That is not a valid input')
-            print('Please enter Y or N to continue.')
+            print('Please enter Y or N to continue.\n')
         else:
             # Handles invalid input by the user
             print(
@@ -516,11 +516,11 @@ def replay():
             )
             print('That is not a valid input')
             print('Please enter Y or N to continue.\n')
-        elif user_input == ' ':
+        elif ' ' in user_input:
             # Handles spacebar input by the user
             clear()
             print(
-                '\nSorry, you pressed '
+                '\nSorry, your input contains a '
                 f'{Fore.RED}{Style.BRIGHT}Space{Fore.RESET}{Style.RESET_ALL}'
             )
             print('That is not a valid input')
