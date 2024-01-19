@@ -77,3 +77,15 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 
 
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Desktop | Mobile |
+| --- | --- | --- |
+| Home | ![Desktop screenshot](documentation/lighthouse-desktop.png) | ![Mobile screenshot](documentation/lighthouse-mobile.png) |
+
+### Notable Errors
+
+After running my lighthouse report there was only one notable error. This was on the desktop report under the SEO section. The error was regarding the template provided to me by the [Code Institute](https://www.codeinstitute.net/). In the layout.html file there was no meta description in the head of the document summarising the content of the page. This would be added as a future development to change the SEO score from amber to green.
+
