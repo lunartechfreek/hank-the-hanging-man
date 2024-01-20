@@ -195,3 +195,22 @@ I encountered many bugs throughout my project, the most notable ones are as foll
 
     - To fix this I changed the if statement to stop checking if the guess length was equal to the word length,  and instead check that the length of the guess was over one. I then went further into this and changed my `word_guess()` function to check if the game was being played in easy mode. If it was then the user would receive an error message saying that the guess was the wrong length. I did this to make easy mode slightly easier. If the user was playing medium or hard mode then the user would lose a life if the word guess was incorrect regardless of the length. 
 
+## Unfixed Bugs
+
+- The first unfixed bug that I know of is regarding the responsiveness tests on mobile devices. The terminal provided does not fit the screen correctly. This is a known issue with the [Code Institute](https://www.codeinstitute.net/) template that I am required to use for this project.
+
+    - | Galaxy Fold | Galaxy S23 | Oneplus 11R
+      | --- | --- | --- |
+      | ![Galaxy Fold screenshot](documentation/testing-files/responsiveness-testing/responsiveness-galaxy-fold.png) | ![Galaxy S23 screenshot](documentation/testing-files/browser-testing/testing-mobile-galaxy-s23-chrome.png) |![Oneplus 11R screenshot](documentation/testing-files/browser-testing/testing-mobile-oneplus-11r-chrome.png) |
+
+- The second unfixed bug was found during my browser testing. This was that the program did not run correctly on Safari because you could not enter anything into the first input. Without the use of the input feature, this game would be unplayable on this browser. This bug is again a known issue with the template provided by the [Code Institute](https://www.codeinstitute.net/).
+
+    - ![Safari error screenshot](documentation/testing-files/browser-testing/testing-mac-safari-error.png)
+
+- The third unfixed bug I found was that emojis do not display correctly on some browsers. The two I found on desktop browsers are Firefox and Yondex. On Firefox it only shows half the emoji, and on Yondex it replaces it with a 0. Interestingly the iPad 10th Gen on safari also shows only half the emoji but all other macOS and iOS products do not have this exact issue. 
+
+- | Firefox | Yandex | Safari (iPad)
+  | --- | --- | --- |
+  | ![Firefox screenshot](documentation/testing-files/browser-testing/testing-mac-firefox-error.png) | ![Yandex screenshot](documentation/testing-files/browser-testing/testing-windows-yandex-error.png) | ![Safari (iPad) screenshot](documentation/testing-files/browser-testing/testing-tablet-ipad-safari-error.png) |
+
+There are no remaining bugs that I am aware of.
