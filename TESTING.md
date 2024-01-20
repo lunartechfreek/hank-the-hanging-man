@@ -160,3 +160,38 @@ Defensive programming was manually tested with the below user acceptance testing
 |  | If a space is entered, invalid entry message will display and return spacebar was pressed | Press spacebar | Passed: Invalid message displayed | ![Invalid space screenshot](documentation/testing-files/defensive-programming/defensive-replay-space.png) |
 |  | If the user presses enter, invalid entry message will display and return enter was pressed | Press enter | Passed: Invalid message displayed | ![Invalid enter screenshot](documentation/testing-files/defensive-programming/defensive-replay-enter.png) |
 
+## Bugs
+
+I encountered many bugs throughout my project, the most notable ones are as follows:
+
+- Hangman image displaying incorrectly.
+
+    ![Display hangman bug screenshot](documentation/testing-files/bugs/bug-display-hangman.png)
+
+    - To fix this I added an extra `\` to the arm and leg so that the program would read it as a literal backslash and not as an escape character. I found this fix to my bug on [Chat GPT](https://chat.openai.com/).
+
+- If a correct letter was guessed by the user, it was not replacing the `_` with the letter and its position inside the hidden game word.
+
+    ![Update word letters bug screenshot](documentation/testing-files/bugs/bug-update-word-letter.png)
+
+    - To fix this I adjusted my `letter_guess()` function by first assigning the `update_word()` function to the `word_completion` variable rather than just calling the `update_word()` function. And then finally returning the result of the `update_word()` function.
+
+- If an incorrect letter was guessed by the user the hangman image was not updating.  
+
+    ![Update hangman bug screenshot](documentation/testing-files/bugs/bug-update-hangman.png)
+
+    - To fix this I by changed the variable `tries` to a global variable. This was needed to be done because the value of `tries` was being modified inside a function that it was not declared in so needed to be changed to a global scope. 
+
+- When the correct word was guessed it did not end the game and congratulate the user for winning. 
+
+    ![Word guess bug screenshot one](documentation/testing-files/bugs/bug-word-guess.png)
+    ![Word guess bug screenshot two](documentation/testing-files/bugs/bug-word-guess-two.png)
+
+    - To fix this I changed the variable `guessed` to a global variable. This was needed to be done because the value of `guessed` was being modified inside a function that it was not declared in so needed to be changed to a global scope to update the value to true when the word was correctly guessed, and run the `game_end()` function. 
+
+- When the user guessed a word that was a different length to the word it was showing an invalid entry error. 
+
+    ![Invalid word length bug screenshot](documentation/testing-files/bugs/bug-invalid-word-length.png)
+
+    - To fix this I changed the if statement to stop checking if the guess length was equal to the word length,  and instead check that the length of the guess was over one. I then went further into this and changed my `word_guess()` function to check if the game was being played in easy mode. If it was then the user would receive an error message saying that the guess was the wrong length. I did this to make easy mode slightly easier. If the user was playing medium or hard mode then the user would lose a life if the word guess was incorrect regardless of the length. 
+
