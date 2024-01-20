@@ -228,3 +228,24 @@ I used [Contrast Grid Eight Shapes](https://contrast-grid.eightshapes.com/?versi
 
 ![Clear screenshot](documentation/readme-files/features/features-clear.png)
 
+### Future Features
+
+In the future I plan to add more features to this game. These future developments would be as follows:
+
+- **Further Develop Hard Difficulty**
+    - In future I would plan to make the hard difficulty a bit harder than it already is. I would do this by first adding a countdown timer that means the user has to think quicker to beat the clock. I would also remove the word length visual for the harder difficulty. 
+
+- **Make Validation Function**
+    - I would make one function for handling all the invalid inputs throughout the game to clean up code and avoid repetition. This function would be required to behave differently dependant on the function and input it was being called to validate. For example, it would need to display a different error message dependant on the function it is being called within. 
+
+
+- **Record Users Time**
+    - I would like to entice the user to challenge themselves further by recording the time it takes for them to each difficulty they play and store this data on a scoreboard. This way they will know the time they need to beat to improve and train their brain. 
+
+- **Add Meta Description**
+    -  When I ran my lighthouse report I discovered that inside the template the [Code Institute](https://www.codeinstitute.net/) provided to me that there was no meta description in the head of the HTML document. I am not aware if this was done for a purpose, or maybe just with this only being a generic template to display my python project. But in future I would find out the answer and if able to I would add meta descriptions to change the SEO score from green to amber. 
+
+- **Fix Browser Bugs**
+    - In future I would like to look further into what is causing the issues on certain browsers and devices. I would attempt to fix the problem of not being able to type in the input, and I would try to find an alternative to emojis not displaying correctly on certain browsers if there was no fix. 
+
+
