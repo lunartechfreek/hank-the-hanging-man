@@ -249,3 +249,18 @@ In the future I plan to add more features to this game. These future development
     - In future I would like to look further into what is causing the issues on certain browsers and devices. I would attempt to fix the problem of not being able to type in the input, and I would try to find an alternative to emojis not displaying correctly on certain browsers if there was no fix. 
 
 
+## Tools & Technologies Used
+
+Throughout this project I have used a variety of different tools and technologies. These are listed below:
+
+- [Python](https://www.python.org/) used for the main game content.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [Heroku](https://www.heroku.com/) used for hosting my application.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) used to check responsive design and to run my lighthouse report. 
+- [BrowserStack](https://www.browserstack.com/) used to emmulate different devices and browsers to test my website on. 
+- [Am I Responsive?](https://ui.dev/amiresponsive) used to generate preview imagery of the responsive design used throughout the website.
+- [Code Institue Template](https://github.com/Code-Institute-Org/p3-template)
+- [Random Word Generator](https://randomwordgenerator.com/) used to generate random words.
+
