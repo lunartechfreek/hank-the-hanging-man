@@ -40,3 +40,27 @@ I used [Contrast Grid Eight Shapes](https://contrast-grid.eightshapes.com/?versi
 
 ![Contrast Grid](documentation/readme-files/contrast-grid.png)
 
+## User Stories
+
+### New Site Users
+
+- As a new site user, I would like to play a game, so that I can relax.
+- As a new site user, I would like to see colours in the game, so that I can feel positive emotions while playing.
+- As a new site user, I would like to feel engaged in the game, so that I can escape from real life.
+- As a new site user, I would like to see the rules, so that I can understand how the game works.
+- As a new site user, I would like to easily navigate the game, so that I can replay the game or select a different difficulty.
+- As a new site user, I would like to see interesting images, so that I find the game visually appealing.
+- As a new site user, I would like to see if my answer is correct or not, so that I can clearly see how I am doing.
+
+### Returning Site Users
+
+- As a returning site user, I would like to have different difficulties available, so that I can challenge myself.
+- As a returning site user, I would like to have a lot of game words available, so that I can replay the game without too many repeated words.
+- As a returning site user, I would like to see different narratives display each time I play, so that I don't find the game repetitive.
+
+### Site Administrator Goals
+
+- As a site administrator, I should be able to provide a fun and engaging game, so that I can make the users have a happy experience.
+- As a site administrator, I should be able to provide multiple difficulties, so that I can encourage the user to return to play again.
+- As a site administrator, I should be able to provide more words than are used during one game, so that I can get the user to return to play again.
+
