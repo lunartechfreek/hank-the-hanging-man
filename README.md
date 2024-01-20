@@ -1,6 +1,6 @@
 # Hank The Hanging Man
 
-![screenshot](documentation/preview.png)
+![screenshot](documentation/readme-files/preview.png)
 
 [Click here to view the live project](https://hank-the-hanging-man-8f469cffdce1.herokuapp.com)
 
