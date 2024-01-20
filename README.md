@@ -63,4 +63,168 @@ I used [Contrast Grid Eight Shapes](https://contrast-grid.eightshapes.com/?versi
 - As a site administrator, I should be able to provide a fun and engaging game, so that I can make the users have a happy experience.
 - As a site administrator, I should be able to provide multiple difficulties, so that I can encourage the user to return to play again.
 - As a site administrator, I should be able to provide more words than are used during one game, so that I can get the user to return to play again.
+- As a site administrator, I should be able to provide a diverse game that can be played by all age groups, so that I can reach a wider audience.
+
+## Features
+
+### Existing Features
+
+- **Welcome Section**
+
+    - The first section the welcome section. In this section the user is asked for their name. This is then returned to the user throughout various messages in the game to engage them and talk directly to the user to give them a more personal experience.
+
+| Welcome | Name Input |
+| --- | --- |
+| ![Welcome screenshot](documentation/readme-files/features/features-welcome.png) | ![Name screenshot](documentation/readme-files/features/features-name.png) |
+
+- **How To Section**
+
+    - The next section is the how to play, which asks the user if they would like to view the instructions. If they select yes then the instructions will be displayed. If they select no then they will be taken straight to the introduction where the story narrative is displayed. 
+
+![How to screenshot](documentation/readme-files/features/features-how-to.png)
+
+- **Instructions Section**
+
+    - In the instructions section the user is presented with the instructions on how the game is played, so that they can get the most out of their experience.
+
+
+![Instructions screenshot](documentation/readme-files/features/features-instructions.png)
+
+- **Introduction Section**
+
+    - The introduction section is where the user is presented with the story narrative. I did this to give the user a more interesting experience than just playing a simple game of hangman, and with the story of saving Hank it almost makes the user feel as though they have something more to play for. 
+    - In this section I also made sure to return the users name when asking them a question so as to directly make them feel more involved.
+    - Also in this section I added an option for the user to quit the game, so as to improve the users navigation experience.
+
+![Introduction screenshot](documentation/readme-files/features/features-intro.png)
+
+- **Select Difficulty Section**
+
+    - Here in the select difficulty section the user can choose to either select a difficulty or quit the game. I added this section and the various difficulties so the game would be more repayable and suitable for users of all ages and intelligence levels to make the game more diverse and target a broader audience.
+
+![Select difficulty screenshot](documentation/readme-files/features/features-select-difficulty.png)
+
+- **Difficulty Narratives**
+
+    - When a difficulty is selected there will be another story narrative displayed with the first line returning the difficulty the user clicked on highlighted in a corresponding colour. I chose for the easy difficulty to be green because its commonly associated as an easy colour. I wanted a more neutral colour for the medium difficulty to emphasise that it is almost the middle difficulty so I chose cyan. For the hard difficulty I chose red as that is commonly associated with being hard. 
+    - I also wanted to make the statements more visually appealing so also added an associated emoji that reflects to the narrative displayed so the user will have a more visually appealing experience. 
+
+| Difficulty | Screenshot |
+| --- | --- |
+| Easy | ![Easy screenshot](documentation/readme-files/features/features-easy.png) |
+| Medium | ![Medium screenshot](documentation/readme-files/features/features-medium.png) | 
+| Hard | ![Hard screenshot](documentation/readme-files/features/features-hard.png) |  
+
+- **Easy Difficulty Invalid Guess Length**
+
+    - Considering I want the game to be diverse and appeal to users of all ages I decided to make the easy difficulty even easier by changing how the game reacts to a word guess of an incorrect length. On the medium and hard difficulties if the user guesses a word of an incorrect length they will lose a life. But to make this difficulty a bit more user friendly to younger age groups I added an invalid statement which instead of losing a life will display a message explaining to the user that the length was incorrect. The statement tells the user how long their guess was and also how long the answer is. 
+
+![Easy invalid guess length screenshot](documentation/readme-files/features/features-easy-invalid.png)
+
+- **Game Image**
+
+    - I wanted to make my hangman images a bit different than usual. So I decided to use emojis for the head. I wanted to emphasise what stage the user was up to so by using emojis I started off with only a slightly worried emoji. This then gets more worried and alarmed as the game goes on until finally a skull emoji is used to emphasise to the user that they have killed Hank. 
+
+| Phase | Screenshot |
+| --- | --- |
+| One | ![Phase 1 screenshot](documentation/readme-files/features/features-phase-one.png) | 
+| Two | ![Phase 2 screenshot](documentation/readme-files/features/features-phase-two.png) |
+| Three | ![Phase 3 screenshot](documentation/readme-files/features/features-phase-three.png) |
+| Four | ![Phase 4 screenshot](documentation/readme-files/features/features-phase-four.png) |
+| Five | ![Phase 5 screenshot](documentation/readme-files/features/features-phase-five.png) |
+| Six | ![Phase 6 screenshot](documentation/readme-files/features/features-phase-six.png) |
+| Seven | ![Phase 7 screenshot](documentation/readme-files/features/features-phase-seven.png) |
+
+- **Hidden Word**
+
+    - I used the built in random module to generate a random word from one of the lists of words i had made for each difficulty. Then I wanted to hide the words by displaying a `_` instead of the letter and add a space between them to make the amount of letters clearer. When the user guesses a correct answer the `_` is then replaced by the correct letter in the position it occurs in the word. 
+
+| Hidden Word | Letters In Word |
+| --- | --- |
+| ![Hidden word screenshot](documentation/readme-files/features/features-word-hidden.png) | ![Word letters screenshot](documentation/readme-files/features/features-word-letters.png) |
+
+
+- **Correct Guess**
+
+    - I wanted to further portray to the user when they had got an answer correct. I did this by the use of colour in my statements. For the correct statements I highlighted the guess in green and also the users name where applicable.
+
+| Letter Guess | Word Guess |
+| --- | --- |
+| ![Correct letter screenshot](documentation/readme-files/features/features-letter-guess-correct.png) | ![Correct word screenshot](documentation/readme-files/features/features-word-guess-correct.png) |
+
+
+- **Incorrect Guess**
+
+    - I wanted to further portray to the user when they had got an answer incorrect. I did this by the use of colour in my statements. For the incorrect statements I highlighted the guess in red and also the users name where applicable.
+
+| Letter Guess | Word Guess |
+| --- | --- |
+| ![Incorrect letter screenshot](documentation/readme-files/features/features-letter-guess-incorrect.png) | ![Incorrect word screenshot](documentation/readme-files/features/features-word-guess-incorrect.png) |
+
+- **Letters Guessed**
+
+    - I wanted to display to the user the letters that they had already guessed. I did this so they could hopefully make a more accurate guess at the word, but also to avoid them constantly entering duplicate entries and having to view the statement I added to handle duplicate inputs. 
+
+
+![Letters guessed screenshot](documentation/readme-files/features/features-guessed-letters.png)
+
+- **Word Length**
+
+    - With the words being of varying lengths rather than making the user count the amount of blank letters I decided to display to the user how many letters was in the word. I did this to improve the users experience and also to increase the chance of the user returning because it would eliminate the frustration of having to count the blank lines every time. 
+
+
+![Word length screenshot](documentation/readme-files/features/features-word-length.png)
+
+- **Random Narratives**
+
+    - To enhance the users experience I added in a story narrative at certain points throughout the game. I Added these narratives for when the user has 4 lives left, 2 lives left, 1 life left, and 0 lives left. I did this to make the game more enjoyable with witty lines popping up to amuse the user. 
+    - To make the game more repayable and to entice the user to return, I made these statements random by creating a list of narratives for each stage of lives left and then using the program to randomly select one to display. I did this so the user wouldn’t get bored of seeing the same statements each time the game was played.
+
+| Phase | Screenshot |
+| --- | --- |
+| Three | ![Phase three screenshot](documentation/readme-files/features/features-random-phase-three.png) |
+| Five | ![Phase five screenshot](documentation/readme-files/features/features-random-phase-five.png) |
+| Six | ![Phase six screenshot](documentation/readme-files/features/features-random-phase-six.png) |
+| Seven | ![Phase seven screenshot](documentation/readme-files/features/features-random-phase-seven.png) |
+
+
+- **Game End**
+
+    - When the user reaches the game end, a different statement will appear dependant on whether the user lost or won the game. If the user lost the game I have highlighted their name and in red to emphasise that they have lost, and also highlighted the correct word in green. If the user wins the game I have highlighted their name in green to portray their victory. 
+
+| Game Lost | Game Won |
+| --- | --- |
+| ![Game lost screenshot](documentation/readme-files/features/features-game-end-lose.png) | ![Game won screenshot](documentation/readme-files/features/features-game-end-win.png) |
+
+- **Replay Option**
+
+    - I have added a replay question at the end of the game to ask the user if they would like to replay. I added this to enhance the users experience navigating the game and to avoid them have to restart the program manually. If the user selects that they would like to replay they will be taken back to the select difficulty page. I navigated the user here so that they would have the chance to  change the difficulty incase it was too easy or too hard previously. If the user chooses no to the replay question the game will quit.
+
+
+![Replay screenshot](documentation/readme-files/features/features-game-end-replay.png)
+
+- **Quit Section**
+
+    - With me giving the user an option to quit the game throughout various points, I made a quit section for them to be guided to. In this section I included the instructions for the user to restart the game by clicking the button about the game area. I did this so the user would have full clarity and no confusion as to how to return to the game after they had quit.
+
+![Quit screenshot](documentation/readme-files/features/features-quit.png)
+
+- **Invalid Statements**
+
+    - With every input I have added, I have made sure to handle any incorrect input given by the user. To do this have made separate statements regarding inputs of an incorrect letter, an incorrect number, a special character, a space, and pressing the enter button. For each of the invalid inputs I have returned to the user what they incorrectly entered highlighted in red in the error statement. 
+    - When the user enters a space or enter the invalid statement was returning a blank space for a space entry, and nothing for an enter entry. I changed this by making an if statement for each relevant validity check in my code and returning the word `Space` and `Enter` highlighted in red when the user inputs either of them. 
+
+| Error Type | Screenshot |
+| --- | --- |
+| Number | ![Number screenshot](documentation/readme-files/features/features-invalid-number.png) |
+| Special Character | ![Special screenshot](documentation/readme-files/features/features-invalid-special.png) |
+| Spacebar | ![Spacebar screenshot](documentation/readme-files/features/features-invalid-space.png) |
+| Enter | ![Enter screenshot](documentation/readme-files/features/features-invalid-enter.png) |
+
+- **Clear Function**
+
+    - I added a clear function to use throughout my game so as not to clutter the terminal with unnecessary code. The function is called each time the user navigates to a new section, each time they enter an invalid input, each time they guess a letter or word, and many other times. 
+
+
+![Clear screenshot](documentation/readme-files/features/features-clear.png)
 
