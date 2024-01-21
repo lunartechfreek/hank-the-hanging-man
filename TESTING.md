@@ -158,6 +158,38 @@ Defensive programming was manually tested with the below user acceptance testing
 |  | If a space is entered, invalid entry message will display and return spacebar was pressed | Press spacebar | Passed: Invalid message displayed | ![Invalid space screenshot](documentation/testing-files/defensive-programming/defensive-replay-space.png) |
 |  | If the user presses enter, invalid entry message will display and return enter was pressed | Press enter | Passed: Invalid message displayed | ![Invalid enter screenshot](documentation/testing-files/defensive-programming/defensive-replay-enter.png) |
 
+## User Story Testing
+
+🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+Testing user stories is actually quite simple, once you've already got the stories defined on your README.
+
+Most of your project's **features** should already align with the **user stories**,
+so this should as simple as creating a table with the user story, matching with the re-used screenshot
+from the respective feature.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+| User Story | Screenshot |
+| --- | --- |
+| As a new site user, I would like to play a game, so that I can relax. | ![Game screenshot](documentation/testing-files/user-story-testing/user-new-game.png) |
+| As a new site user, I would like to see colours in the game, so that I can feel positive emotions while playing. | ![Colour screenshot](documentation/testing-files/user-story-testing/user-new-colour.png) |
+| As a new site user, I would like to feel engaged in the game, so that I can escape from real life. | ![Story screenshot](documentation/testing-files/user-story-testing/user-new-engaged.png) |
+| As a new site user, I would like to see the rules, so that I can understand how the game works. | ![Instructions screenshot](documentation/testing-files/user-story-testing/user-new-instructions.png) |
+| As a new site user, I would like to easily navigate the game, so that I can replay the game or select a different difficulty. | ![Replay screenshot](documentation/testing-files/user-story-testing/user-new-replay.png) |
+|  | ![Difficulty screenshot](documentation/testing-files/user-story-testing/user-new-select-difficulty.png) | 
+| As a new site user, I would like to see interesting images, so that I find the game visually appealing. | ![Screenshot](documentation/testing-files/user-story-testing/user-new-image.png) |
+| As a new site user, I would like to see if my answer is correct or not, so that I can clearly see how I am doing. | ![Incorrect screenshot](documentation/testing-files/user-story-testing/user-new-incorrect.png) |
+| As a returning site user, I would like to have different difficulties available, so that I can challenge myself. | ![Difficulty screenshot](documentation/testing-files/user-story-testing/user-new-select-difficulty.png) |
+| As a returning site user, I would like to have a lot of game words available, so that I can replay the game without too many repeated words. | ![Words screenshot](documentation/testing-files/user-story-testing/user-return-words.png) |
+| As a returning site user, I would like to see different narratives display each time I play, so that I don't find the game repetitive. | ![Narrative screenshot](documentation/testing-files/user-story-testing/user-new-game.png) |
+|  | ![Narrative list screenshot](documentation/testing-files/user-story-testing/user-return-narratives.png) |
+
+| As a site administrator, I should be able to provide a fun and engaging game, so that I can make the users have a happy experience. | ![Game screenshot](documentation/testing-files/user-story-testing/user-new-game.png) |
+| As a site administrator, I should be able to provide multiple difficulties, so that I can encourage the user to return to play again. | ![Difficulty screenshot](documentation/testing-files/user-story-testing/user-new-select-difficulty.png) |
+| As a site administrator, I should be able to provide more words than are used during one game, so that I can get the user to return to play again. | ![Words screenshot](documentation/testing-files/user-story-testing/user-return-words.png) |
+| As a site administrator, I should be able to provide a diverse game that can be played by all age groups, so that I can reach a wider audience. | ![Difficulty screenshot](documentation/testing-files/user-story-testing/user-new-select-difficulty.png) |
+
 ## Bugs
 
 I encountered many bugs throughout my project, the most notable ones are as follows:
