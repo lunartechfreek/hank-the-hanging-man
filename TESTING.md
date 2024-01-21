@@ -62,9 +62,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Device | Test Type | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Macbook Pro | Physical | ![Macbook Pro screenshot](documentation/testing-files/responsiveness-testing/responsiveness-macbook-pro.png) | No issues |
-| Iphone 15 ProMax | Physical | ![Iphone 15 ProMax screenshot]() |  |
-| Iphone 14 Plus | Physical | ![Iphone 14 Plus screenshot]() |  |
-|  |  | ![screenshot]() |  |
+| Iphone 15 ProMax | Physical | ![Iphone 15 ProMax screenshot](documentation/testing-files/responsiveness-testing/responsiveness-mobile-iphone-15-pro-max.png) | Content does not fit screen |
 | Desktop | Virtual | ![Desktop screenshot](documentation/testing-files/browser-testing/testing-windows-edge.png) | No issues |
 | Galaxy S23 | Virtual | ![Galaxy S23 screenshot](documentation/testing-files/browser-testing/testing-mobile-galaxy-s23-chrome.png) | Content does not fit screen |
 | Oneplus 11R | Virtual | ![Oneplus 11R screenshot](documentation/testing-files/browser-testing/testing-mobile-oneplus-11r-chrome.png) | Content does not fit screen |
