@@ -27,7 +27,7 @@ def clear():
 def get_word(difficulty_selected):
     """
     Function to return random word, taking
-    a parameter of game difficulty chosen
+    a parameter of game difficulty chosen.
     """
     word = random.choice(difficulty_selected)
     return word.upper()
@@ -36,7 +36,7 @@ def get_word(difficulty_selected):
 def run_story(story):
     """
     Function to display relevant section
-    of story narrative
+    of story narrative.
     """
     print(story)
 
@@ -44,7 +44,7 @@ def run_story(story):
 def run_hangman_story(tries):
     """
     Function to display random narratives to user
-    at different points in gmae
+    at different points in game.
     """
     if tries == 4:
         hangman_phase_three = random.choice(story.phase_three)
@@ -64,7 +64,7 @@ def select_difficulty():
     """
     Function for user to choose a difficulty,
     which will return the array of words
-    for the difficulty chosen
+    for the difficulty chosen.
     """
     while True:
         print('Type E for easy')
@@ -130,7 +130,7 @@ def select_difficulty():
 def how_to_play():
     """
     Function to display instructions to the user,
-    and to validate user input
+    and to validate user input.
     """
     clear()
     instructions = story.instructions
@@ -177,7 +177,7 @@ def welcome():
     and to pass the user the choice of difficulty.
     This will return the array that was previously
     selected by the user in the select_difficulty
-    function
+    function.
     """
     print('\nWelcome to Hank the Hanging Man!\n')
     while True:
@@ -303,7 +303,7 @@ def display_word(word, letters_guessed):
     the word and show each letter that has been
     correctly guessed by the user, and to
     hide all other letters, function will
-    then return the word
+    then return the word.
     """
     displayed_word = ''
     for letter in word:
@@ -638,7 +638,7 @@ def display_hangman(tries):
 
 def main():
     """
-    Main function to run the game
+    Main function to run the game.
     """
     selected_difficulty, user_name = welcome()
     word = get_word(selected_difficulty)
