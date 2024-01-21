@@ -473,3 +473,33 @@ The only minor differences are:
 - Font size is slightly bigger in the deployed version
 - The colours used are more vibrant in the deployed version
 
+## Credits
+
+I used various resources for content throughout the site. These are listed below in more detail. 
+
+### Content
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [Youtube](https://www.youtube.com/watch?v=m4nEnsavl6w) | Game | Used for inspiration and the general requirements to build the game, borrowed code for the `update_word()` function. Inspired me to use a list to display my hangman. |
+| [ChatGPT](https://chat.openai.com/) | Game | Use of using the double `\\` to get my hangman graphic to display correctly, also used for help with some bug/syntax fixes |
+| [Real Python](https://realpython.com/if-name-main-python/ ) | Game | Use of main guard at bottom of file. |
+| [Python Docs](https://docs.python.org/3/library/textwrap.html ) | Game | How to adjust the indentation on multiline strings. |
+| [Geeks For Geeks](https://www.geeksforgeeks.org/clear-screen-python/) | Game | How to make the terminal clear when desired. |
+| [Youtube](https://www.youtube.com/watch?v=u51Zjlnui4Y ) | Game | Used for help with how to use colorama |
+| [Github](https://github.com/lunartechfreek/blurty-minds/) | README and TESTING | Referred back to the README for my last project for inspiration |
+
+### Media
+
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
+| [Coolers](https://coolors.co/) | Deployed Site | Colour | Used for colour palette |
+| [TinyPNG](https://tinypng.com) | README and TESTING files | Image | Tool for image compression |
+| [Contrast Grid Eight Shapes](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383D932%0D%0A%23ED2828%0D%0A%23E84610%0D%0A%232ED1D1%0D%0A%23000000%0D%0A%23FFFFFF&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) | Deployed Site | Colour | Used to check contrast |
+
+### Acknowledgements
+
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support.
+- I would like to thank my partner (Charlotte), for believing in me, and allowing me to make this transition into software development.
