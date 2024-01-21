@@ -32,6 +32,16 @@ I also added colour to the difficulty narratives. I used green for easy, cyan fo
 
 I used [Coolers](https://coolors.co/ffffff-2ed1d1-83d932-e84610-ed2828-000000) to use their colour pick tool to create a palette of the various colours used throughout the game, and also the colours used in the template provided to me by the [Code Institute](https://www.codeinstitute.net/).
 
+The colours used are:
+
+- `#FFFFFF` - White
+- `#2ED1D1` - Robin Egg Blue
+- `#83D932` - SGBUS Green
+- `#E84610` - Golden Gate Bridge
+- `#ED2828` - Red (CMYK)
+- `#000000` - Black
+
+
 ![Colour Palette](documentation/readme-files/colour-palette.png)
 
 ### Contrast Grid
