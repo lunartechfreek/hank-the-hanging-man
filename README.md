@@ -273,14 +273,13 @@ Throughout this project I have used a variety of different tools and technologie
 - [Am I Responsive?](https://ui.dev/amiresponsive) used to generate preview imagery of the responsive design used throughout the website.
 - [Code Institue Template](https://github.com/Code-Institute-Org/p3-template)
 - [Random Word Generator](https://randomwordgenerator.com/) used to generate random words.
+- [Lucidchart](https://www.lucidchart.com/)
 
 ## Data Model
 
 ### Flowchart
 
-To follow best practice, a flowchart was created for the app's logic,
-and mapped out before coding began using a free version of
-[Lucidchart](https://www.lucidchart.com/).
+To follow best practice, a flowchart was created for the app's logic, and mapped out before coding began using a free version of [Lucidchart](https://www.lucidchart.com/).
 
 Below is the flowchart of the main process of this Python program. It shows the entire cycle of the program.
 
