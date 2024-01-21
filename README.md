@@ -264,3 +264,103 @@ Throughout this project I have used a variety of different tools and technologie
 - [Code Institue Template](https://github.com/Code-Institute-Org/p3-template)
 - [Random Word Generator](https://randomwordgenerator.com/) used to generate random words.
 
+## Data Model
+
+### Flowchart
+
+To follow best practice, a flowchart was created for the app's logic,
+and mapped out before coding began using a free version of
+[Lucidchart](https://www.lucidchart.com/).
+
+Below is the flowchart of the main process of this Python program. It shows the entire cycle of the program.
+
+![screenshot](documentation/readme-files/flowchart.png)
+
+### Functions
+
+The primary functions used on this application are:
+
+- `clear()`
+    - Clear function to clean-up the terminal.
+    Function checks the users operating system to
+    use the correct method to clear the terminal.
+- `get_word()`
+    - Function to return random word, taking
+    a parameter of game difficulty chosen.
+- `run_story()`
+    - Function to display relevant section
+    of story narrative.
+- `run_hangman_story()`
+    - Function to display random narratives to user
+    at different points in game.
+- `select_difficulty()`
+    - Function for user to choose a difficulty,
+    which will return the array of words
+    for the difficulty chosen.
+- `how_to_play()`
+    - Function to display instructions to the user,
+    and to validate user input.
+- `welcome()`
+    - Function to handle the start of the game,
+    and to pass the user the choice of difficulty.
+    This will return the array that was previously
+    selected by the user in the select_difficulty
+    function.
+- `display_word()`
+    - Function to loop through each letter in
+    the word and show each letter that has been
+    correctly guessed by the user, and to
+    hide all other letters, function will
+    then return the word.
+- `play()`
+    - Main function to play the game.
+    Has an input to take the guess from the user
+    which is then validated and stored in a variable.
+    Other functions are then called to handle the
+    users guess, and checks the users input is valid.
+- `letter_guess()`
+    - Function to handle when the user guesses a word.
+    Checks for duplicate inputs.
+    Uses colorama to display feedback to the user in the relevant
+    colour dependant if the input is correct or not.
+- `word_guess()`
+    - Function to handle when the user guesses a word.
+    Checks for duplicate inputs.
+    Uses colorama to display feedback to the user in the relevant
+    colour dependant if the input is correct or not.
+- `update_word()`
+    - Function to update the game word,
+    replaces the underscores with the letter
+    if the letter is correct.
+    Code borrowed from Youtube tutorial:
+    https://www.youtube.com/watch?v=m4nEnsavl6w
+- `game_end()`
+    - Function to handle the end of the game.
+    Displays message to the user to let them know
+    if they won or failed.
+    Return message uses colorama to change the name
+    and word the relevant colour depending on the outcome.
+- `replay()`
+    - Function to handle replaying the game,
+    changing the difficulty should the user choose to,
+    and checking the users input is valid
+- `display_hangman()`
+    - Function to display hangman phases.
+    Also removes indent from hangman graphic.
+- `main()`
+    - Main function to run the game.
+
+### Imports
+
+I've used the following Python packages and/or external imported packages.
+
+- `random`: Used to get a random choice from a list.
+- `textwrap`: Used to correctly indent my hangman graphic.
+- `os`: Used for adding a `clear()` function.
+- `colorama`: Used for including color in the terminal.
+- `from colorama import Fore, Style`: To import specific requirements from colorama. Both import lines are needed for colorama to function correctly.
+
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
